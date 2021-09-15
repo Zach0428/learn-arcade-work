@@ -10,7 +10,7 @@ arcade.set_background_color(arcade.color.BLACK)
 # Get ready to draw.
 arcade.start_render()
 
-# Draw the snow
+# Draw the snow.
 arcade.draw_lrtb_rectangle_filled(0, 800, 150, 0, arcade.color.WHITE)
 
 # Draw snowman base.
