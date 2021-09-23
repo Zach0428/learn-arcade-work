@@ -24,6 +24,7 @@ def snowman(x, y):
     arcade.draw_line(260 + x, 280 + y, 240 + x, 220 + y, arcade.color.BROWN, 5)
     arcade.draw_line(335 + x, 290 + y, 370 + x, 290 + y, arcade.color.BROWN, 5)
     arcade.draw_line(370 + x, 325 + y, 370 + x, 290 + y, arcade.color.BROWN, 5)
+    arcade.draw_point(0, 20, arcade.color.YELLOW, 7)
 
 
 def cloud(x, y):
