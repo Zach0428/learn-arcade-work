@@ -33,13 +33,13 @@ class MyGame(arcade.Window):
 
         # Create our ball
         self.ball = Ball(50, 50, 15, arcade.color.AUBURN)
-
         self.set_mouse_visible(False)
 
     def on_draw(self):
         """ Called whenever we need to draw the window. """
         arcade.start_render()
         self.ball.draw()
+
 
     def on_mouse_motion(self, x, y, dx, dy):
         self.ball.position_x = x
