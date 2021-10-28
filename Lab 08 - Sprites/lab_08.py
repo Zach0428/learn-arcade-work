@@ -112,7 +112,7 @@ class MyGame(arcade.Window):
         os.chdir(file_path)
 
         # Sprite lists
-        self.all_sprites_list = None
+        self.player_list = None
         self.banana_list = None
         self.coin_list = None
 
@@ -124,7 +124,7 @@ class MyGame(arcade.Window):
         """ Set up the game and initialize the variables. """
 
         # Sprite lists
-        self.all_sprites_list = arcade.SpriteList()
+        self.player_list = arcade.SpriteList()
         self.banana_list = arcade.SpriteList()
         self.coin_list = arcade.SpriteList()
 
@@ -134,24 +134,11 @@ class MyGame(arcade.Window):
         self.player_sprite = Player("malePerson_walk1 (1).png", SPRITE_SCALING)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 70
-        self.all_sprites_list.append(self.player_sprite)
+        self.player_list.append(self.player_sprite)
         """ Set up the game and initialize the variables. """
 
         # Sprite lists
-        self.player_sprite_list = arcade.SpriteList()
         self.coin_sprite_list = arcade.SpriteList()
-
-
-        # Score
-        self.score = 0
-
-        # Set up the player
-        # Character image from kenney.nl
-        self.player_sprite = arcade.Sprite(":resources:images/animated_characters/female_person/femalePerson_idle.png",
-                                           SPRITE_SCALING_PLAYER)
-        self.player_sprite.center_x = 50
-        self.player_sprite.center_y = 50
-        self.player_sprite_list.append(self.player_sprite)
 
         # Create the coins
         for i in range(COIN_COUNT):
@@ -166,7 +153,6 @@ class MyGame(arcade.Window):
 
             # Add the coin to the lists
             self.coin_sprite_list.append(coin)
-            self.all_sprites_list.append(coin)
 
 
         for i in range(50):
@@ -186,7 +172,6 @@ class MyGame(arcade.Window):
             banana.circle_angle = random.random() * 2 * math.pi
 
             # Add the coin to the lists
-            self.all_sprites_list.append(banana)
             self.banana_list.append(banana)
 
         # Don't show the mouse cursor
@@ -198,18 +183,12 @@ class MyGame(arcade.Window):
     def on_draw(self):
         arcade.start_render()
         self.coin_sprite_list.draw()
-        self.player_sprite_list.draw()
+        self.player_list.draw()
+        self.banana_list.draw()
 
         # Put the text on the screen.
         output = f"Score: {self.score}"
         arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
-
-        # This command has to happen before we start drawing
-        arcade.start_render()
-
-        # Draw all the sprites.
-        self.all_sprites_list.draw()
-
         # Put the text on the screen.
         output = "Score: " + str(self.score)
         arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
@@ -244,8 +223,9 @@ class MyGame(arcade.Window):
 
         # Call update on all sprites (The sprites don't do much in this
         # example though.)
-        self.all_sprites_list.update()
-        self.player_sprite_list.update()
+        self.banana_list.update()
+        self.player_list.update()
+        self.coin_list.update()
 
         # Generate a list of all sprites that collided with the player.
         hit_list = arcade.check_for_collision_with_list(self.player_sprite,
