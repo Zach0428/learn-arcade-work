@@ -6,6 +6,9 @@ import arcade
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 MOVEMENT_SPEED = 3
+right_sound = arcade.load_sound(":resources:sounds/laser2.wav")
+left_sound = arcade.load_sound(":resources:sounds/coin1.wav")
+wall_hit = arcade.load_sound(":resources:sounds/error1.wav")
 
 def snow():
     arcade.draw_lrtb_rectangle_filled(0, SCREEN_WIDTH, SCREEN_HEIGHT / 4, 0, arcade.color.WHITE)
@@ -74,7 +77,6 @@ class Snowman:
         arcade.draw_triangle_filled(self.position_x - 5, 330 + self.position_y, self.position_x - 5, 340 + self.position_y, 15 + self.position_x, 335 + self.position_y, arcade.color.ORANGE)
         arcade.draw_circle_filled(self.position_x - 10, 345 + self.position_y, 3, arcade.color.BLACK, num_segments=32)
         arcade.draw_circle_filled(10 + self.position_x, 345 + self.position_y, 3, arcade.color.BLACK, num_segments=32)
-        arcade.draw_arc_filled(300 + self.position_x, 325 + self.position_y, 25, 20, arcade.color.BLACK, 180, 360)
         arcade.draw_line(self.position_x - 40, 280 + self.position_y, self.position_x - 60, 220 + self.position_y, arcade.color.BROWN, 5)
         arcade.draw_line(35 + self.position_x, 290 + self.position_y, 70 + self.position_x, 290 + self.position_y, arcade.color.BROWN, 5)
         arcade.draw_line(70 + self.position_x, 325 + self.position_y, 70 + self.position_x, 290 + self.position_y, arcade.color.BROWN, 5)
@@ -87,15 +89,19 @@ class Snowman:
 
         if self.position_x < self.radius:
             self.position_x = self.radius
+            arcade.play_sound(wall_hit)
 
         if self.position_x > SCREEN_WIDTH - self.radius:
             self.position_x = SCREEN_WIDTH - self.radius
+            arcade.play_sound(wall_hit)
 
         if self.position_y < self.radius:
             self.position_y = self.radius
+            arcade.play_sound(wall_hit)
 
         if self.position_y > SCREEN_HEIGHT - self.radius:
             self.position_y = SCREEN_HEIGHT - self.radius
+            arcade.play_sound(wall_hit)
 
 class MyGame(arcade.Window):
     """ Our Custom Window Class"""
@@ -123,11 +129,9 @@ class MyGame(arcade.Window):
     def on_mouse_press(self, x, y, button: int, modifiers: int):
         print(button)
         if button == arcade.MOUSE_BUTTON_LEFT:
-            print("Left button hit!", x, y)
+            arcade.play_sound(left_sound)
         if button == arcade.MOUSE_BUTTON_RIGHT:
-            print("Right button hit!", x, y)
-        if button == arcade.MOUSE_BUTTON_MIDDLE:
-            print("Scroll wheel hit!", x, y)
+            arcade.play_sound(right_sound)
 
     def update(self, delta_time):
         self.snowman.update()
