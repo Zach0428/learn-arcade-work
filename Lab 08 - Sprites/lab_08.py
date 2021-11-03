@@ -147,7 +147,7 @@ class MyGame(arcade.Window):
         self.coin_sprite_list = arcade.SpriteList()
 
         # Create the coins
-        for i in range(1):
+        for i in range(COIN_COUNT):
 
             # Create the coin instance
             # Coin image from kenney.nl
