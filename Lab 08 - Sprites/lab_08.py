@@ -23,7 +23,7 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Sprite Collect Coins Moving in Circles Example"
 
-MOVEMENT_SPEED = 2
+MOVEMENT_SPEED = 5
 BANANA = .03
 
 
@@ -226,40 +226,35 @@ class MyGame(arcade.Window):
     def on_update(self, delta_time):
         """ Movement and game logic """
 
-        # Call update on all sprites (The sprites don't do much in this
-        # example though.)
-        self.banana_list.update()
-        self.player_list.update()
-        self.coin_list.update()
-
-        # Generate a list of all sprites that collided with the player.
-        hit_list = arcade.check_for_collision_with_list(self.player_sprite,
-                                                        self.banana_list)
-
-        # Loop through each colliding sprite, remove it, and add to the score.
-        for banana in hit_list:
-            self.score -= 1
-            banana.remove_from_sprite_lists()
-
-        """ Movement and game logic """
-
-        # Call update on all sprites (The sprites don't do much in this
-        # example though.)
-
-        # Generate a list of all sprites that collided with the player.
-        hit_list = arcade.check_for_collision_with_list(self.player_sprite,
-                                                        self.coin_sprite_list)
-
-        self.coin_sprite_list.update()
-
+        # Call update on all sprites (The sprites don't do much in this# example though.)
         if len(self.coin_sprite_list) > 0:
-            self.player_list.update()
             self.banana_list.update()
+            self.player_list.update()
+            self.coin_list.update()
+            self.coin_sprite_list.update()
+            # Generate a list of all sprites that collided with the player.
+            hit_list = arcade.check_for_collision_with_list(self.player_sprite,
+                                                            self.banana_list)
 
-        # Loop through each colliding sprite, remove it, and add to the score.
-        for coin in hit_list:
-            coin.remove_from_sprite_lists()
-            self.score += 1
+            # Loop through each colliding sprite, remove it, and add to the score.
+            for banana in hit_list:
+                self.score -= 1
+                banana.remove_from_sprite_lists()
+
+            """ Movement and game logic """
+
+            # Call update on all sprites (The sprites don't do much in this
+            # example though.)
+
+            # Generate a list of all sprites that collided with the player.
+            hit_list = arcade.check_for_collision_with_list(self.player_sprite,
+                                                            self.coin_sprite_list)
+
+            # Loop through each colliding sprite, remove it, and add to the score.
+            for coin in hit_list:
+                coin.remove_from_sprite_lists()
+                self.score += 1
+
 
 def main():
     window = MyGame(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)

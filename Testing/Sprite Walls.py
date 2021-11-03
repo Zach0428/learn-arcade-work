@@ -27,6 +27,13 @@ class MyGame(arcade.Window):
         # Set up the player
         self.player_sprite = None
 
+        self.score = 0
+
+        # Create the cameras. One for the GUI, one for the sprites.
+        # We scroll the 'sprite world' but not the GUI.
+        self.camera_for_sprites = arcade.Camera(SCREEN_WIDTH, SCREEN_HEIGHT)
+        self.camera_for_gui = arcade.Camera(SCREEN_WIDTH, SCREEN_HEIGHT)
+
     def setup(self):
 
         arcade.set_background_color(arcade.color.AMAZON)
@@ -70,13 +77,20 @@ class MyGame(arcade.Window):
 
         self.physics_engine = arcade.PhysicsEngineSimple(self.player_sprite, self.wall_list)
 
-    def update(self, delta_time):
+    def on_update(self, delta_time):
         self.physics_engine.update()
+        CAMERA_SPEED = 1
+        lower_left_corner = (self.player_sprite.center_x - self.width / 2,
+                             self.player_sprite.center_y - self.height / 2)
+        self.camera_for_sprites.move_to(lower_left_corner, CAMERA_SPEED)
 
     def on_draw(self):
         arcade.start_render()
+        self.camera_for_sprites.use()
         self.player_list.draw()
         self.wall_list.draw()
+        self.camera_for_gui.use()
+        arcade.draw_text(f"Score: {self.score}", 10, 10, arcade.color.WHITE, 24)
 
     def on_key_press(self, key, modifiers):
         """Called whenever a key is pressed. """
