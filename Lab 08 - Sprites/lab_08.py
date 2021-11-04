@@ -23,7 +23,7 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Sprite Collect Coins Moving in Circles Example"
 
-MOVEMENT_SPEED = 5
+MOVEMENT_SPEED = 2
 BANANA = .03
 
 
@@ -147,7 +147,7 @@ class MyGame(arcade.Window):
         self.coin_sprite_list = arcade.SpriteList()
 
         # Create the coins
-        for i in range(1):
+        for i in range(50):
 
             # Create the coin instance
             # Coin image from kenney.nl
@@ -197,6 +197,10 @@ class MyGame(arcade.Window):
         # Put the text on the screen.
         output = "Score: " + str(self.score)
         arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
+
+        if len(self.coin_sprite_list) == 0:
+            end = "Game Over"
+            arcade.draw_text(end, 400, 300, arcade.color.WHITE, 16, anchor_x="center")
 
     def on_key_press(self, key, modifiers):
         """Called whenever a key is pressed. """
