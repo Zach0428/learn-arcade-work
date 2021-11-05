@@ -110,12 +110,9 @@ class MyGame(arcade.Window):
 
         self.coin_sprite_list = arcade.SpriteList()
 
-<<<<<<< HEAD
         # Create the coins
-        for i in range(50):
-=======
+
         for i in range(COIN_COUNT):
->>>>>>> 4c6c2671553c647f17b47ad1aaf3ef3d35b349ff
 
             coin = Coin("coinGold.png", SPRITE_SCALING_COIN)
 
@@ -155,11 +152,9 @@ class MyGame(arcade.Window):
 
         if len(self.coin_sprite_list) == 0:
             end = "Game Over"
-<<<<<<< HEAD
             arcade.draw_text(end, 400, 300, arcade.color.WHITE, 16, anchor_x="center")
-=======
+
             arcade.draw_text(end, SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, arcade.color.WHITE, 16, anchor_x="center")
->>>>>>> 4c6c2671553c647f17b47ad1aaf3ef3d35b349ff
 
     def on_key_press(self, key, modifiers):
 
