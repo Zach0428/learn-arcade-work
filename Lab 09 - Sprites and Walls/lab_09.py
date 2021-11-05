@@ -128,7 +128,15 @@ class MyGame(arcade.Window):
             coordinate_list = [[256, 128],
                                [256, 192],
                                [256, 256],
-                               [256, 320]]
+                               [256, 320],
+                               [544, 128],
+                               [544, 192],
+                               [544, 256],
+                               [256, 448],
+                               [256, 512],
+                               [256, 576],
+                               [64, 512],
+                               [128, 512]]
 
             for coordinate in coordinate_list:
                 wall = arcade.Sprite("stoneCenter.png", SPRITE_SCALING)
