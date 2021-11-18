@@ -1,4 +1,5 @@
 import arcade
+import random
 
 WIDTH = 60
 HEIGHT = 60
@@ -20,11 +21,18 @@ class MyGame(arcade.Window):
 
         arcade.set_background_color(arcade.color.BLACK)
 
+        # Create grid of numbers
         self.grid = []
         for row in range(ROW_COUNT):
             self.grid.append([])
             for column in range(COLUMN_COUNT):
                 self.grid[row].append(0)
+
+        self.grid[2][1] = 1
+
+        print(self.grid)
+
+        # self.grid = [[0 for x in range(10)] for y in range(10)]
 
     def on_draw(self):
         """
@@ -37,13 +45,26 @@ class MyGame(arcade.Window):
             for column in range(COLUMN_COUNT):
                 x = WIDTH / 2 + column * (WIDTH + MARGIN) + MARGIN
                 y = HEIGHT / 2 + row * (HEIGHT + MARGIN) + MARGIN
-                arcade.draw_rectangle_filled(x, y, WIDTH, HEIGHT, arcade.color.BALL_BLUE)
+                if self.grid[row][column] == 0:
+                    color = arcade.color.BALL_BLUE
+                else:
+                    color = (random.randrange(256),
+                             random.randrange(256),
+                             random.randrange(256))
+                arcade.draw_rectangle_filled(x, y, WIDTH, HEIGHT, color)
 
     def on_mouse_press(self, x, y, button, key_modifiers):
         """
         Called when the user presses a mouse button.
         """
-        pass
+        row = y // (HEIGHT + MARGIN)
+        column = x // (WIDTH + MARGIN)
+        print("Click", row, column)
+
+        if self.grid[row][column] == 0:
+            self.grid[row][column] = 1
+        else:
+            self.grid[row][column] = 0
 
 
 def main():

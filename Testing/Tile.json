@@ -1,0 +1,33 @@
+{ "backgroundcolor":"#1b36e5",
+ "compressionlevel":-1,
+ "height":10,
+ "infinite":false,
+ "layers":[
+        {
+         "data":[30, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 0, 29, 0, 0, 0, 143, 145, 145, 142, 0, 31, 0, 0, 0, 0, 0, 145, 145, 145, 145, 145, 63, 62, 145, 145, 145, 0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 143, 145, 145, 54, 0, 0, 0, 0, 154, 0, 0, 0, 0, 140, 140, 140, 0, 0, 54, 0, 0, 0, 0, 140, 140, 54, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0, 0, 0, 0, 0, 54, 0, 0, 0, 0, 0, 0, 0, 140, 0, 0, 67, 0, 67, 0, 54, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35],
+         "height":10,
+         "id":1,
+         "name":"Walls",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":15,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":2,
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.7.1",
+ "tileheight":128,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"Platformer Tiles.json"
+        }],
+ "tilewidth":128,
+ "type":"map",
+ "version":"1.6",
+ "width":15
+}
