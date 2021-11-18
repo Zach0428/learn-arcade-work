@@ -61,6 +61,12 @@ class MyGame(arcade.Window):
         else:
             self.grid[row][column] = 0
 
+        total = 0
+        for row in range(ROW_COUNT):
+            for column in range(COLUMN_COUNT):
+                if self.grid[row][column] == 1:
+                    total += 1
+        print("Total of", total, "cells are selected.")
 
         # Listing 2
         cell_count = 0
@@ -69,8 +75,14 @@ class MyGame(arcade.Window):
             for column in range(COLUMN_COUNT):
                 if self.grid[row][column] == 1:
                     cell_count += 1
-            print("Row", row, "has", cell_count, "cells selected")
-            print("Column", column, "has", cell_count, "cells selected")
+            print("Row", row, "has", cell_count, "cells selected.")
+
+        for column in range(COLUMN_COUNT):
+            cell_count = 0
+            for row in range(ROW_COUNT):
+                if self.grid[row][column] == 1:
+                    cell_count += 1
+            print("Column", column, "has", cell_count, "cells selected.")
 
 
 def main():
