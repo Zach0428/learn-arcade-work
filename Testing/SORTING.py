@@ -24,7 +24,6 @@ def selection_sort(my_list):
         my_list[cur_pos] = temp
 
 
-def insertion_sort(my_list):
     """ Sort a list using the insertion sort """
 
     # Start at the second element (pos 1).
