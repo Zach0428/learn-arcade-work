@@ -6,12 +6,22 @@ Question 1
 
 
 Question 2
-Comments, Variables, Grouping Code,
+In order to communicate with other programmers, I typically use comments to show
+them what I am doing with a certain section of code. Also, to make my code more
+programmer friendly, I use proper variable names instead of using things such as,
+x, t, h, etc. I found that when showing off my work to other programmers, it was
+a lot easier to read if it was grouped together rather than just having line after
+line. I found it easy to ask questions when I had specific check ins with my code.
+When uploading it to GitHub, I would title it specifically, so I knew what I was
+working on. A lot of times, I would actually write things on my phone in the note
+app to tell myself where I was at. That made it easier to pick right backup where
+I left off.
+
+Keeping track of changes,
+Documentation,
 
 Question 3
-
+Inspect the error,
 
 Question 4
-
-
-Question 5
+It is easy to mess up algorithms, No diversity, Based on statistics,
