@@ -1,0 +1,3030 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://api.arcade.academy/en/latest/resources.html -->
+<html class="writer-html5" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources — Python Arcade Library 2.6.5 documentation</title>
+      <link rel="stylesheet" href="./Resources — Python Arcade Library 2.6.5 documentation_files/pygments.css" type="text/css">
+      <link rel="stylesheet" href="./Resources — Python Arcade Library 2.6.5 documentation_files/theme.css" type="text/css">
+      <link rel="stylesheet" href="./Resources — Python Arcade Library 2.6.5 documentation_files/copybutton.css" type="text/css">
+      <link rel="stylesheet" href="./Resources — Python Arcade Library 2.6.5 documentation_files/custom.css" type="text/css">
+    <link rel="shortcut icon" href="https://api.arcade.academy/en/latest/_static/favicon.ico">
+    <link rel="canonical" href="https://api.arcade.academy/resources.html">
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script type="text/javascript" async="" src="./Resources — Python Arcade Library 2.6.5 documentation_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Resources — Python Arcade Library 2.6.5 documentation_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Resources — Python Arcade Library 2.6.5 documentation_files/js"></script><script type="text/javascript" async="" src="./Resources — Python Arcade Library 2.6.5 documentation_files/js(1)"></script><script data-url_root="./" id="documentation_options" src="./Resources — Python Arcade Library 2.6.5 documentation_files/documentation_options.js.download"></script>
+        <script src="./Resources — Python Arcade Library 2.6.5 documentation_files/jquery.js.download"></script>
+        <script src="./Resources — Python Arcade Library 2.6.5 documentation_files/underscore.js.download"></script>
+        <script src="./Resources — Python Arcade Library 2.6.5 documentation_files/doctools.js.download"></script>
+        <script src="./Resources — Python Arcade Library 2.6.5 documentation_files/clipboard.min.js.download"></script>
+        <script src="./Resources — Python Arcade Library 2.6.5 documentation_files/copybutton.js.download"></script>
+        <script async="async" src="./Resources — Python Arcade Library 2.6.5 documentation_files/readthedocs-doc-embed.js.download"></script>
+    <script src="./Resources — Python Arcade Library 2.6.5 documentation_files/theme.js.download"></script>
+    <link rel="index" title="Index" href="https://api.arcade.academy/en/latest/genindex.html">
+    <link rel="search" title="Search" href="https://api.arcade.academy/en/latest/search.html">
+    <link rel="next" title="Working with the Keyboard" href="https://api.arcade.academy/en/latest/keyboard.html">
+    <link rel="prev" title="arcade.color package" href="https://api.arcade.academy/en/latest/arcade.color.html"> 
+
+<!-- RTD Extra Head -->
+
+<link rel="stylesheet" href="./Resources — Python Arcade Library 2.6.5 documentation_files/readthedocs-doc-embed.css" type="text/css">
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": true, "api_host": "https://readthedocs.org", "build_date": "2021-11-19T21:56:25Z", "builder": "sphinx", "canonical_url": null, "commit": "fcac0183", "docroot": "/doc/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "resources", "programming_language": "py", "project": "arcade-library", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "UA-202281437-1", "version": "latest"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+<script type="text/javascript" src="./Resources — Python Arcade Library 2.6.5 documentation_files/readthedocs-analytics.js.download" async="async"></script>
+
+<!-- end RTD <extrahead> -->
+<script src="./Resources — Python Arcade Library 2.6.5 documentation_files/js(2)" type="text/javascript" async=""></script></head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+            <a href="https://api.arcade.academy/en/latest/index.html" class="icon icon-home"> Python Arcade Library
+            <img src="./Resources — Python Arcade Library 2.6.5 documentation_files/favicon-32x32.png" class="logo" alt="Logo">
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="https://api.arcade.academy/en/latest/search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/get_started.html">Get Started Here</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/install/index.html">Installation Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/pygame_comparison.html">Pygame Comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/sample_games.html">Games Made With Arcade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/examples/index.html">How-To Example Code</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul class="current" aria-expanded="true">
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/quick_index.html">Quick API Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/arcade.html">Arcade Package API</a></li>
+<li class="toctree-l1 current" aria-expanded="true"><a class="reference internal current" href="https://api.arcade.academy/en/latest/resources.html#" aria-expanded="true">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/keyboard.html">Working with the Keyboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/examples/platform_tutorial/index.html">Simple Platformer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/tutorials/pymunk_platformer/index.html">Pymunk Platformer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/tutorials/views/index.html">Using Views for Start/End Screens</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/tutorials/card_game/index.html">Solitaire Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/tutorials/lights/index.html">Lights Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/tutorials/gpu_particle_burst/index.html">GPU Particle Burst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/tutorials/bundling_with_pyinstaller/index.html">Bundling a Game with PyInstaller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/tutorials/shader_toy/index.html">Shader Toy Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/tutorials/framebuffer/index.html">Working With FrameBuffer Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/tutorials/raycasting/index.html">Ray-casting Shadows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/tutorials/crt_filter/index.html">CRT Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/gui/index.html">GUI</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/advanced/vsync.html">Vertical Synchronization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/advanced/textures.html">Textures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/advanced/texture_atlas.html">Texture Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/advanced/opengl_notes.html">OpenGL Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/development/performance_tips.html">Arcade Performance Information</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/community/diversity.html">Diverse Coders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/community/social.html">Social Media</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/development/release_notes.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/development/how_to_contribute.html">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/development/performance_tips.html">Arcade Performance Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/development/directory_structure.html">Directory Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/development/how_to_compile.html">How to Compile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/development/how_to_submit_changes.html">How to Submit Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/development/enhancement_list.html">Enhancement List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/development/edge_artifacts/index.html">Edge Artifacts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://api.arcade.academy/en/latest/development/logging.html">Logging</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="https://api.arcade.academy/en/latest/index.html">Python Arcade Library</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="https://api.arcade.academy/en/latest/index.html" class="icon icon-home"></a> »</li>
+          <li><a href="https://api.arcade.academy/en/latest/arcade.html">Arcade Package API</a> »</li>
+      <li>Resources</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/pythonarcade/arcade/blob/maintenance/doc/resources.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="resources">
+<span id="id1"></span><h1>Resources<a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#resources" title="Permalink to this headline"></a></h1>
+<p>Resource files are images and sounds built into Arcade that can be used to quickly build and test simple code without having to worry about copying files into the project.</p>
+<p>Any file loaded that starts with <code class="docutils literal notranslate"><span class="pre">:resources:</span></code> will attempt to load that file from the library resources instead of the project directory.</p>
+<p>Many of the resources come from <a class="reference external" href="https://kenney.nl/">Kenney.nl</a> and are licensed under CC0 (Creative Commons Zero). Be sure to check out his web page for a much wider selection of assets.</p>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id2">
+<caption><span class="caption-text">:resources:gui_basic_assets/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id2" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/red_button_normal.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/red_button_normal.png">
+<p>red_button_normal.png</p>
+</td>
+<td><img alt="_images/red_button_press.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/red_button_press.png">
+<p>red_button_press.png</p>
+</td>
+<td><img alt="_images/button_square_blue.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/button_square_blue.png">
+<p>button_square_blue.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/red_button_hover.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/red_button_hover.png">
+<p>red_button_hover.png</p>
+</td>
+<td><img alt="_images/button_square_blue_pressed.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/button_square_blue_pressed.png">
+<p>button_square_blue_pressed.png</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id3">
+<caption><span class="caption-text">:resources:gui_basic_assets/items/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id3" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/sword_gold.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sword_gold.png">
+<p>sword_gold.png</p>
+</td>
+<td><img alt="_images/shield_gold.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/shield_gold.png">
+<p>shield_gold.png</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id4">
+<caption><span class="caption-text">:resources:gui_basic_assets/window/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id4" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/grey_panel.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grey_panel.png">
+<p>grey_panel.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id5">
+<caption><span class="caption-text">:resources:gui_basic_assets/icons/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id5" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/larger.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/larger.png">
+<p>larger.png</p>
+</td>
+<td><img alt="_images/smaller.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/smaller.png">
+<p>smaller.png</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id6">
+<caption><span class="caption-text">:resources:tiled_maps/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id6" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>maps.tiled-project</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id7">
+<caption><span class="caption-text">:resources:sounds/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id7" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/upgrade4.wav?raw=true" type="audio/x-wav"></audio><br>upgrade4.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/upgrade5.wav?raw=true" type="audio/x-wav"></audio><br>upgrade5.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/explosion2.wav?raw=true" type="audio/x-wav"></audio><br>explosion2.wav</td>
+</tr>
+<tr class="row-even"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/upgrade2.wav?raw=true" type="audio/x-wav"></audio><br>upgrade2.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/hit4.wav?raw=true" type="audio/x-wav"></audio><br>hit4.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/hit3.wav?raw=true" type="audio/x-wav"></audio><br>hit3.wav</td>
+</tr>
+<tr class="row-odd"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/hurt5.wav?raw=true" type="audio/x-wav"></audio><br>hurt5.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/lose5.wav?raw=true" type="audio/x-wav"></audio><br>lose5.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/phaseJump1.ogg?raw=true" type="audio/ogg"></audio><br>phaseJump1.ogg</td>
+</tr>
+<tr class="row-even"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/error1.wav?raw=true" type="audio/x-wav"></audio><br>error1.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/error4.wav?raw=true" type="audio/x-wav"></audio><br>error4.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/coin1.wav?raw=true" type="audio/x-wav"></audio><br>coin1.wav</td>
+</tr>
+<tr class="row-odd"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/error2.wav?raw=true" type="audio/x-wav"></audio><br>error2.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/phaseJump1.wav?raw=true" type="audio/x-wav"></audio><br>phaseJump1.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/laser1.ogg?raw=true" type="audio/ogg"></audio><br>laser1.ogg</td>
+</tr>
+<tr class="row-even"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/coin4.wav?raw=true" type="audio/x-wav"></audio><br>coin4.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/fall2.wav?raw=true" type="audio/x-wav"></audio><br>fall2.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/jump1.wav?raw=true" type="audio/x-wav"></audio><br>jump1.wav</td>
+</tr>
+<tr class="row-odd"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/hurt3.wav?raw=true" type="audio/x-wav"></audio><br>hurt3.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/laser1.wav?raw=true" type="audio/x-wav"></audio><br>laser1.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/coin3.wav?raw=true" type="audio/x-wav"></audio><br>coin3.wav</td>
+</tr>
+<tr class="row-even"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/hit5.wav?raw=true" type="audio/x-wav"></audio><br>hit5.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/lose4.wav?raw=true" type="audio/x-wav"></audio><br>lose4.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/coin5.wav?raw=true" type="audio/x-wav"></audio><br>coin5.wav</td>
+</tr>
+<tr class="row-odd"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/upgrade3.wav?raw=true" type="audio/x-wav"></audio><br>upgrade3.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/hurt4.wav?raw=true" type="audio/x-wav"></audio><br>hurt4.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/fall1.wav?raw=true" type="audio/x-wav"></audio><br>fall1.wav</td>
+</tr>
+<tr class="row-even"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/lose2.wav?raw=true" type="audio/x-wav"></audio><br>lose2.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/jump4.wav?raw=true" type="audio/x-wav"></audio><br>jump4.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/coin2.wav?raw=true" type="audio/x-wav"></audio><br>coin2.wav</td>
+</tr>
+<tr class="row-odd"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/laser4.wav?raw=true" type="audio/x-wav"></audio><br>laser4.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/error3.wav?raw=true" type="audio/x-wav"></audio><br>error3.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/hurt2.wav?raw=true" type="audio/x-wav"></audio><br>hurt2.wav</td>
+</tr>
+<tr class="row-even"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/lose1.wav?raw=true" type="audio/x-wav"></audio><br>lose1.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/hit2.wav?raw=true" type="audio/x-wav"></audio><br>hit2.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/gameover2.wav?raw=true" type="audio/x-wav"></audio><br>gameover2.wav</td>
+</tr>
+<tr class="row-odd"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/explosion1.wav?raw=true" type="audio/x-wav"></audio><br>explosion1.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/secret4.wav?raw=true" type="audio/x-wav"></audio><br>secret4.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/rockHit2.ogg?raw=true" type="audio/ogg"></audio><br>rockHit2.ogg</td>
+</tr>
+<tr class="row-even"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/fall4.wav?raw=true" type="audio/x-wav"></audio><br>fall4.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/jump3.wav?raw=true" type="audio/x-wav"></audio><br>jump3.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/gameover1.wav?raw=true" type="audio/x-wav"></audio><br>gameover1.wav</td>
+</tr>
+<tr class="row-odd"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/rockHit2.wav?raw=true" type="audio/x-wav"></audio><br>rockHit2.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/laser2.wav?raw=true" type="audio/x-wav"></audio><br>laser2.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/gameover3.wav?raw=true" type="audio/x-wav"></audio><br>gameover3.wav</td>
+</tr>
+<tr class="row-even"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/laser3.wav?raw=true" type="audio/x-wav"></audio><br>laser3.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/upgrade1.wav?raw=true" type="audio/x-wav"></audio><br>upgrade1.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/hurt1.wav?raw=true" type="audio/x-wav"></audio><br>hurt1.wav</td>
+</tr>
+<tr class="row-odd"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/laser1.mp3?raw=true" type="audio/mpeg"></audio><br>laser1.mp3</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/secret2.wav?raw=true" type="audio/x-wav"></audio><br>secret2.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/jump2.wav?raw=true" type="audio/x-wav"></audio><br>jump2.wav</td>
+</tr>
+<tr class="row-even"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/hit1.wav?raw=true" type="audio/x-wav"></audio><br>hit1.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/gameover4.wav?raw=true" type="audio/x-wav"></audio><br>gameover4.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/error5.wav?raw=true" type="audio/x-wav"></audio><br>error5.wav</td>
+</tr>
+<tr class="row-odd"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/lose3.wav?raw=true" type="audio/x-wav"></audio><br>lose3.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/jump5.wav?raw=true" type="audio/x-wav"></audio><br>jump5.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/fall3.wav?raw=true" type="audio/x-wav"></audio><br>fall3.wav</td>
+</tr>
+<tr class="row-even"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/laser5.wav?raw=true" type="audio/x-wav"></audio><br>laser5.wav</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/sounds/gameover5.wav?raw=true" type="audio/x-wav"></audio><br>gameover5.wav</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id8">
+<caption><span class="caption-text">:resources:fonts/ttf/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id8" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Kenney High Square.ttf</p></td>
+<td><p>Kenney Future.ttf</p></td>
+<td><p>Kenney Mini.ttf</p></td>
+</tr>
+<tr class="row-even"><td><p>Kenney Blocks.ttf</p></td>
+<td><p>Kenney Pixel.ttf</p></td>
+<td><p>Kenney Mini Square.ttf</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kenney Rocket Square.ttf</p></td>
+<td><p>Kenney High.ttf</p></td>
+<td><p>Kenney Future Narrow.ttf</p></td>
+</tr>
+<tr class="row-even"><td><p>Kenney Pixel Square.ttf</p></td>
+<td><p>Kenney Rocket.ttf</p></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id9">
+<caption><span class="caption-text">:resources:images/animated_characters/zombie/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id9" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/zombie_climb0.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/zombie_climb0.png">
+<p>zombie_climb0.png</p>
+</td>
+<td><img alt="_images/zombie_walk6.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/zombie_walk6.png">
+<p>zombie_walk6.png</p>
+</td>
+<td><img alt="_images/zombie_walk5.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/zombie_walk5.png">
+<p>zombie_walk5.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/zombie_walk4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/zombie_walk4.png">
+<p>zombie_walk4.png</p>
+</td>
+<td><img alt="_images/zombie_jump.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/zombie_jump.png">
+<p>zombie_jump.png</p>
+</td>
+<td><img alt="_images/zombie_walk2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/zombie_walk2.png">
+<p>zombie_walk2.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/zombie_walk1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/zombie_walk1.png">
+<p>zombie_walk1.png</p>
+</td>
+<td><img alt="_images/zombie_fall.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/zombie_fall.png">
+<p>zombie_fall.png</p>
+</td>
+<td><img alt="_images/zombie_walk0.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/zombie_walk0.png">
+<p>zombie_walk0.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/zombie_walk7.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/zombie_walk7.png">
+<p>zombie_walk7.png</p>
+</td>
+<td><img alt="_images/zombie_climb1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/zombie_climb1.png">
+<p>zombie_climb1.png</p>
+</td>
+<td><img alt="_images/zombie_walk3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/zombie_walk3.png">
+<p>zombie_walk3.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/zombie_idle.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/zombie_idle.png">
+<p>zombie_idle.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id10">
+<caption><span class="caption-text">:resources:images/animated_characters/female_adventurer/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id10" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/femaleAdventurer_walk7.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femaleAdventurer_walk7.png">
+<p>femaleAdventurer_walk7.png</p>
+</td>
+<td><img alt="_images/femaleAdventurer_climb1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femaleAdventurer_climb1.png">
+<p>femaleAdventurer_climb1.png</p>
+</td>
+<td><img alt="_images/femaleAdventurer_fall.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femaleAdventurer_fall.png">
+<p>femaleAdventurer_fall.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/femaleAdventurer_walk2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femaleAdventurer_walk2.png">
+<p>femaleAdventurer_walk2.png</p>
+</td>
+<td><img alt="_images/femaleAdventurer_jump.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femaleAdventurer_jump.png">
+<p>femaleAdventurer_jump.png</p>
+</td>
+<td><img alt="_images/femaleAdventurer_walk3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femaleAdventurer_walk3.png">
+<p>femaleAdventurer_walk3.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/femaleAdventurer_walk0.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femaleAdventurer_walk0.png">
+<p>femaleAdventurer_walk0.png</p>
+</td>
+<td><img alt="_images/femaleAdventurer_walk1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femaleAdventurer_walk1.png">
+<p>femaleAdventurer_walk1.png</p>
+</td>
+<td><img alt="_images/femaleAdventurer_walk4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femaleAdventurer_walk4.png">
+<p>femaleAdventurer_walk4.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/femaleAdventurer_walk5.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femaleAdventurer_walk5.png">
+<p>femaleAdventurer_walk5.png</p>
+</td>
+<td><img alt="_images/femaleAdventurer_climb0.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femaleAdventurer_climb0.png">
+<p>femaleAdventurer_climb0.png</p>
+</td>
+<td><img alt="_images/femaleAdventurer_idle.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femaleAdventurer_idle.png">
+<p>femaleAdventurer_idle.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/femaleAdventurer_walk6.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femaleAdventurer_walk6.png">
+<p>femaleAdventurer_walk6.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id11">
+<caption><span class="caption-text">:resources:images/animated_characters/male_adventurer/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id11" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/maleAdventurer_fall.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/maleAdventurer_fall.png">
+<p>maleAdventurer_fall.png</p>
+</td>
+<td><img alt="_images/maleAdventurer_walk1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/maleAdventurer_walk1.png">
+<p>maleAdventurer_walk1.png</p>
+</td>
+<td><img alt="_images/maleAdventurer_walk4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/maleAdventurer_walk4.png">
+<p>maleAdventurer_walk4.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/maleAdventurer_walk7.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/maleAdventurer_walk7.png">
+<p>maleAdventurer_walk7.png</p>
+</td>
+<td><img alt="_images/maleAdventurer_walk3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/maleAdventurer_walk3.png">
+<p>maleAdventurer_walk3.png</p>
+</td>
+<td><img alt="_images/maleAdventurer_walk0.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/maleAdventurer_walk0.png">
+<p>maleAdventurer_walk0.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/maleAdventurer_walk2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/maleAdventurer_walk2.png">
+<p>maleAdventurer_walk2.png</p>
+</td>
+<td><img alt="_images/maleAdventurer_jump.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/maleAdventurer_jump.png">
+<p>maleAdventurer_jump.png</p>
+</td>
+<td><img alt="_images/maleAdventurer_walk5.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/maleAdventurer_walk5.png">
+<p>maleAdventurer_walk5.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/maleAdventurer_climb0.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/maleAdventurer_climb0.png">
+<p>maleAdventurer_climb0.png</p>
+</td>
+<td><img alt="_images/maleAdventurer_walk6.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/maleAdventurer_walk6.png">
+<p>maleAdventurer_walk6.png</p>
+</td>
+<td><img alt="_images/maleAdventurer_climb1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/maleAdventurer_climb1.png">
+<p>maleAdventurer_climb1.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/maleAdventurer_idle.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/maleAdventurer_idle.png">
+<p>maleAdventurer_idle.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id12">
+<caption><span class="caption-text">:resources:images/animated_characters/robot/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id12" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/robot_walk5.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/robot_walk5.png">
+<p>robot_walk5.png</p>
+</td>
+<td><img alt="_images/robot_walk7.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/robot_walk7.png">
+<p>robot_walk7.png</p>
+</td>
+<td><img alt="_images/robot_idle.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/robot_idle.png">
+<p>robot_idle.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/robot_walk3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/robot_walk3.png">
+<p>robot_walk3.png</p>
+</td>
+<td><img alt="_images/robot_climb0.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/robot_climb0.png">
+<p>robot_climb0.png</p>
+</td>
+<td><img alt="_images/robot_walk2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/robot_walk2.png">
+<p>robot_walk2.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/robot_walk6.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/robot_walk6.png">
+<p>robot_walk6.png</p>
+</td>
+<td><img alt="_images/robot_walk1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/robot_walk1.png">
+<p>robot_walk1.png</p>
+</td>
+<td><img alt="_images/robot_climb1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/robot_climb1.png">
+<p>robot_climb1.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/robot_walk0.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/robot_walk0.png">
+<p>robot_walk0.png</p>
+</td>
+<td><img alt="_images/robot_jump.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/robot_jump.png">
+<p>robot_jump.png</p>
+</td>
+<td><img alt="_images/robot_fall.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/robot_fall.png">
+<p>robot_fall.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/robot_walk4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/robot_walk4.png">
+<p>robot_walk4.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id13">
+<caption><span class="caption-text">:resources:images/animated_characters/female_person/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id13" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/femalePerson_walk3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femalePerson_walk3.png">
+<p>femalePerson_walk3.png</p>
+</td>
+<td><img alt="_images/femalePerson_walk5.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femalePerson_walk5.png">
+<p>femalePerson_walk5.png</p>
+</td>
+<td><img alt="_images/femalePerson_idle.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femalePerson_idle.png">
+<p>femalePerson_idle.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/femalePerson_climb0.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femalePerson_climb0.png">
+<p>femalePerson_climb0.png</p>
+</td>
+<td><img alt="_images/femalePerson_walk4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femalePerson_walk4.png">
+<p>femalePerson_walk4.png</p>
+</td>
+<td><img alt="_images/femalePerson_fall.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femalePerson_fall.png">
+<p>femalePerson_fall.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/femalePerson_walk0.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femalePerson_walk0.png">
+<p>femalePerson_walk0.png</p>
+</td>
+<td><img alt="_images/femalePerson_walk7.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femalePerson_walk7.png">
+<p>femalePerson_walk7.png</p>
+</td>
+<td><img alt="_images/femalePerson_climb1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femalePerson_climb1.png">
+<p>femalePerson_climb1.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/femalePerson_walk1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femalePerson_walk1.png">
+<p>femalePerson_walk1.png</p>
+</td>
+<td><img alt="_images/femalePerson_jump.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femalePerson_jump.png">
+<p>femalePerson_jump.png</p>
+</td>
+<td><img alt="_images/femalePerson_walk2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femalePerson_walk2.png">
+<p>femalePerson_walk2.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/femalePerson_walk6.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/femalePerson_walk6.png">
+<p>femalePerson_walk6.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id14">
+<caption><span class="caption-text">:resources:images/animated_characters/male_person/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id14" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/malePerson_walk7.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/malePerson_walk7.png">
+<p>malePerson_walk7.png</p>
+</td>
+<td><img alt="_images/malePerson_fall.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/malePerson_fall.png">
+<p>malePerson_fall.png</p>
+</td>
+<td><img alt="_images/malePerson_climb1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/malePerson_climb1.png">
+<p>malePerson_climb1.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/malePerson_walk6.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/malePerson_walk6.png">
+<p>malePerson_walk6.png</p>
+</td>
+<td><img alt="_images/malePerson_climb0.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/malePerson_climb0.png">
+<p>malePerson_climb0.png</p>
+</td>
+<td><img alt="_images/malePerson_walk1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/malePerson_walk1.png">
+<p>malePerson_walk1.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/malePerson_walk5.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/malePerson_walk5.png">
+<p>malePerson_walk5.png</p>
+</td>
+<td><img alt="_images/malePerson_walk4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/malePerson_walk4.png">
+<p>malePerson_walk4.png</p>
+</td>
+<td><img alt="_images/malePerson_walk3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/malePerson_walk3.png">
+<p>malePerson_walk3.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/malePerson_jump.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/malePerson_jump.png">
+<p>malePerson_jump.png</p>
+</td>
+<td><img alt="_images/malePerson_walk0.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/malePerson_walk0.png">
+<p>malePerson_walk0.png</p>
+</td>
+<td><img alt="_images/malePerson_idle.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/malePerson_idle.png">
+<p>malePerson_idle.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/malePerson_walk2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/malePerson_walk2.png">
+<p>malePerson_walk2.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id15">
+<caption><span class="caption-text">:resources:images/test_textures/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id15" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/test_texture.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/test_texture.png">
+<p>test_texture.png</p>
+</td>
+<td><img alt="_images/xy_square.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/xy_square.png">
+<p>xy_square.png</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id16">
+<caption><span class="caption-text">:resources:images/isometric_dungeon/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id16" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/stoneUneven_W.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneUneven_W.png">
+<p>stoneUneven_W.png</p>
+</td>
+<td><img alt="_images/stone_E.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stone_E.png">
+<p>stone_E.png</p>
+</td>
+<td><img alt="_images/stoneWallGateClosed_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWallGateClosed_S.png">
+<p>stoneWallGateClosed_S.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/dirtTiles_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtTiles_S.png">
+<p>dirtTiles_S.png</p>
+</td>
+<td><img alt="_images/tableShortChairs_W.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tableShortChairs_W.png">
+<p>tableShortChairs_W.png</p>
+</td>
+<td><img alt="_images/stoneMissingTiles_E.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneMissingTiles_E.png">
+<p>stoneMissingTiles_E.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/woodenSupportBeams_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/woodenSupportBeams_S.png">
+<p>woodenSupportBeams_S.png</p>
+</td>
+<td><img alt="_images/dirt_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirt_S.png">
+<p>dirt_S.png</p>
+</td>
+<td><img alt="_images/stoneWall_N.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWall_N.png">
+<p>stoneWall_N.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/stoneMissingTiles_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneMissingTiles_S.png">
+<p>stoneMissingTiles_S.png</p>
+</td>
+<td><img alt="_images/stoneWallCorner_E.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWallCorner_E.png">
+<p>stoneWallCorner_E.png</p>
+</td>
+<td><img alt="_images/stone_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stone_S.png">
+<p>stone_S.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/stoneWallGateClosed_E.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWallGateClosed_E.png">
+<p>stoneWallGateClosed_E.png</p>
+</td>
+<td><img alt="_images/stoneWallArchway_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWallArchway_S.png">
+<p>stoneWallArchway_S.png</p>
+</td>
+<td><img alt="_images/stone_N.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stone_N.png">
+<p>stone_N.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/stoneWallCorner_W.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWallCorner_W.png">
+<p>stoneWallCorner_W.png</p>
+</td>
+<td><img alt="_images/stoneWallAged_E.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWallAged_E.png">
+<p>stoneWallAged_E.png</p>
+</td>
+<td><img alt="_images/stoneUneven_N.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneUneven_N.png">
+<p>stoneUneven_N.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/stoneTile_N.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneTile_N.png">
+<p>stoneTile_N.png</p>
+</td>
+<td><img alt="_images/stoneWallAged_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWallAged_S.png">
+<p>stoneWallAged_S.png</p>
+</td>
+<td><img alt="_images/stoneWallColumn_E.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWallColumn_E.png">
+<p>stoneWallColumn_E.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/woodenSupportsBeam_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/woodenSupportsBeam_S.png">
+<p>woodenSupportsBeam_S.png</p>
+</td>
+<td><img alt="_images/stone_W.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stone_W.png">
+<p>stone_W.png</p>
+</td>
+<td><img alt="_images/stoneWallCorner_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWallCorner_S.png">
+<p>stoneWallCorner_S.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/stoneMissingTiles_W.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneMissingTiles_W.png">
+<p>stoneMissingTiles_W.png</p>
+</td>
+<td><img alt="_images/stoneWallCorner_N.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWallCorner_N.png">
+<p>stoneWallCorner_N.png</p>
+</td>
+<td><img alt="_images/tableChairsBroken_E.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tableChairsBroken_E.png">
+<p>tableChairsBroken_E.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/stoneSideUneven_N.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneSideUneven_N.png">
+<p>stoneSideUneven_N.png</p>
+</td>
+<td><img alt="_images/stoneUneven_E.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneUneven_E.png">
+<p>stoneUneven_E.png</p>
+</td>
+<td><img alt="_images/stoneWallGateOpen_E.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWallGateOpen_E.png">
+<p>stoneWallGateOpen_E.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/stoneTile_W.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneTile_W.png">
+<p>stoneTile_W.png</p>
+</td>
+<td><img alt="_images/stoneLeft_N.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneLeft_N.png">
+<p>stoneLeft_N.png</p>
+</td>
+<td><img alt="_images/tableChairsBroken_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tableChairsBroken_S.png">
+<p>tableChairsBroken_S.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/stoneMissingTiles_N.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneMissingTiles_N.png">
+<p>stoneMissingTiles_N.png</p>
+</td>
+<td><img alt="_images/stoneWall_W.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWall_W.png">
+<p>stoneWall_W.png</p>
+</td>
+<td><img alt="_images/stoneUneven_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneUneven_S.png">
+<p>stoneUneven_S.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/stoneWall_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneWall_S.png">
+<p>stoneWall_S.png</p>
+</td>
+<td><img alt="_images/woodenCrates_W.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/woodenCrates_W.png">
+<p>woodenCrates_W.png</p>
+</td>
+<td><img alt="_images/stoneSide_E.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneSide_E.png">
+<p>stoneSide_E.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/stoneTile_S.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneTile_S.png">
+<p>stoneTile_S.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id17">
+<caption><span class="caption-text">:resources:images/items/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id17" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/gemYellow.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/gemYellow.png">
+<p>gemYellow.png</p>
+</td>
+<td><img alt="_images/coinGold_ll.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/coinGold_ll.png">
+<p>coinGold_ll.png</p>
+</td>
+<td><img alt="_images/flagRed_down.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/flagRed_down.png">
+<p>flagRed_down.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/flagGreen2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/flagGreen2.png">
+<p>flagGreen2.png</p>
+</td>
+<td><img alt="_images/flagYellow2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/flagYellow2.png">
+<p>flagYellow2.png</p>
+</td>
+<td><img alt="_images/flagYellow1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/flagYellow1.png">
+<p>flagYellow1.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/ladderTop.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/ladderTop.png">
+<p>ladderTop.png</p>
+</td>
+<td><img alt="_images/keyYellow.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/keyYellow.png">
+<p>keyYellow.png</p>
+</td>
+<td><img alt="_images/coinGold_ur.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/coinGold_ur.png">
+<p>coinGold_ur.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/gemRed.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/gemRed.png">
+<p>gemRed.png</p>
+</td>
+<td><img alt="_images/coinGold.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/coinGold.png">
+<p>coinGold.png</p>
+</td>
+<td><img alt="_images/coinGold_lr.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/coinGold_lr.png">
+<p>coinGold_lr.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/coinGold_ul.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/coinGold_ul.png">
+<p>coinGold_ul.png</p>
+</td>
+<td><img alt="_images/flagGreen_down.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/flagGreen_down.png">
+<p>flagGreen_down.png</p>
+</td>
+<td><img alt="_images/flagGreen1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/flagGreen1.png">
+<p>flagGreen1.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/gold_1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/gold_1.png">
+<p>gold_1.png</p>
+</td>
+<td><img alt="_images/gold_4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/gold_4.png">
+<p>gold_4.png</p>
+</td>
+<td><img alt="_images/gemBlue.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/gemBlue.png">
+<p>gemBlue.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/ladderMid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/ladderMid.png">
+<p>ladderMid.png</p>
+</td>
+<td><img alt="_images/gemGreen.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/gemGreen.png">
+<p>gemGreen.png</p>
+</td>
+<td><img alt="_images/star.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/star.png">
+<p>star.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/gold_2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/gold_2.png">
+<p>gold_2.png</p>
+</td>
+<td><img alt="_images/coinSilver_test.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/coinSilver_test.png">
+<p>coinSilver_test.png</p>
+</td>
+<td><img alt="_images/keyRed.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/keyRed.png">
+<p>keyRed.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/keyGreen.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/keyGreen.png">
+<p>keyGreen.png</p>
+</td>
+<td><img alt="_images/flagYellow_down.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/flagYellow_down.png">
+<p>flagYellow_down.png</p>
+</td>
+<td><img alt="_images/flagRed2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/flagRed2.png">
+<p>flagRed2.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/keyBlue.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/keyBlue.png">
+<p>keyBlue.png</p>
+</td>
+<td><img alt="_images/coinSilver.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/coinSilver.png">
+<p>coinSilver.png</p>
+</td>
+<td><img alt="_images/gold_3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/gold_3.png">
+<p>gold_3.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/coinBronze.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/coinBronze.png">
+<p>coinBronze.png</p>
+</td>
+<td><img alt="_images/flagRed1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/flagRed1.png">
+<p>flagRed1.png</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id18">
+<caption><span class="caption-text">:resources:images/enemies/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id18" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/slimePurple.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/slimePurple.png">
+<p>slimePurple.png</p>
+</td>
+<td><img alt="_images/slimeBlock.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/slimeBlock.png">
+<p>slimeBlock.png</p>
+</td>
+<td><img alt="_images/frog.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/frog.png">
+<p>frog.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/frog_move.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/frog_move.png">
+<p>frog_move.png</p>
+</td>
+<td><img alt="_images/bee.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/bee.png">
+<p>bee.png</p>
+</td>
+<td><img alt="_images/wormGreen_dead.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/wormGreen_dead.png">
+<p>wormGreen_dead.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/fishGreen.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/fishGreen.png">
+<p>fishGreen.png</p>
+</td>
+<td><img alt="_images/fishPink.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/fishPink.png">
+<p>fishPink.png</p>
+</td>
+<td><img alt="_images/wormGreen_move.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/wormGreen_move.png">
+<p>wormGreen_move.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/slimeBlue.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/slimeBlue.png">
+<p>slimeBlue.png</p>
+</td>
+<td><img alt="_images/sawHalf.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sawHalf.png">
+<p>sawHalf.png</p>
+</td>
+<td><img alt="_images/fly.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/fly.png">
+<p>fly.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/slimeGreen.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/slimeGreen.png">
+<p>slimeGreen.png</p>
+</td>
+<td><img alt="_images/mouse.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/mouse.png">
+<p>mouse.png</p>
+</td>
+<td><img alt="_images/wormPink.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/wormPink.png">
+<p>wormPink.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/wormGreen.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/wormGreen.png">
+<p>wormGreen.png</p>
+</td>
+<td><img alt="_images/slimeBlue_move.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/slimeBlue_move.png">
+<p>slimeBlue_move.png</p>
+</td>
+<td><img alt="_images/ladybug.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/ladybug.png">
+<p>ladybug.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/saw.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/saw.png">
+<p>saw.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id19">
+<caption><span class="caption-text">:resources:images/backgrounds/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id19" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/abstract_1.jpg" src="./Resources — Python Arcade Library 2.6.5 documentation_files/abstract_1.jpg">
+<p>abstract_1.jpg</p>
+</td>
+<td><img alt="_images/abstract_2.jpg" src="./Resources — Python Arcade Library 2.6.5 documentation_files/abstract_2.jpg">
+<p>abstract_2.jpg</p>
+</td>
+<td><img alt="_images/instructions_0.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/instructions_0.png">
+<p>instructions_0.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/instructions_1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/instructions_1.png">
+<p>instructions_1.png</p>
+</td>
+<td><img alt="_images/stars.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stars.png">
+<p>stars.png</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id20">
+<caption><span class="caption-text">:resources:images/spritesheets/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id20" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/tiles.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tiles.png">
+<p>tiles.png</p>
+</td>
+<td><img alt="_images/number_sheet.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/number_sheet.png">
+<p>number_sheet.png</p>
+</td>
+<td><img alt="_images/codepage_437.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/codepage_437.png">
+<p>codepage_437.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/explosion.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/explosion.png">
+<p>explosion.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id21">
+<caption><span class="caption-text">:resources:images/pinball/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id21" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/bumper.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/bumper.png">
+<p>bumper.png</p>
+</td>
+<td><img alt="_images/pool_cue_ball.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/pool_cue_ball.png">
+<p>pool_cue_ball.png</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id22">
+<caption><span class="caption-text">:resources:images/topdown_tanks/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id22" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/tracksDouble.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tracksDouble.png">
+<p>tracksDouble.png</p>
+</td>
+<td><img alt="_images/tileSand_roadCornerUR.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand_roadCornerUR.png">
+<p>tileSand_roadCornerUR.png</p>
+</td>
+<td><img alt="_images/tileSand_roadCornerUL.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand_roadCornerUL.png">
+<p>tileSand_roadCornerUL.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tankDark_barrel2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankDark_barrel2.png">
+<p>tankDark_barrel2.png</p>
+</td>
+<td><img alt="_images/tankBlue_barrel3_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBlue_barrel3_outline.png">
+<p>tankBlue_barrel3_outline.png</p>
+</td>
+<td><img alt="_images/tileGrass2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass2.png">
+<p>tileGrass2.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tankBody_blue.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_blue.png">
+<p>tankBody_blue.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadTransitionN_dirt.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadTransitionN_dirt.png">
+<p>tileGrass_roadTransitionN_dirt.png</p>
+</td>
+<td><img alt="_images/tileSand_roadCrossing.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand_roadCrossing.png">
+<p>tileSand_roadCrossing.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tankBody_huge.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_huge.png">
+<p>tankBody_huge.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadCornerUR.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadCornerUR.png">
+<p>tileGrass_roadCornerUR.png</p>
+</td>
+<td><img alt="_images/tileSand_roadEast.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand_roadEast.png">
+<p>tileSand_roadEast.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tankBody_red.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_red.png">
+<p>tankBody_red.png</p>
+</td>
+<td><img alt="_images/tankBlue_barrel2_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBlue_barrel2_outline.png">
+<p>tankBlue_barrel2_outline.png</p>
+</td>
+<td><img alt="_images/treeGreen_small.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/treeGreen_small.png">
+<p>treeGreen_small.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tankGreen_barrel3_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankGreen_barrel3_outline.png">
+<p>tankGreen_barrel3_outline.png</p>
+</td>
+<td><img alt="_images/tankBody_green.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_green.png">
+<p>tankBody_green.png</p>
+</td>
+<td><img alt="_images/tankGreen_barrel1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankGreen_barrel1.png">
+<p>tankGreen_barrel1.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tileSand_roadCornerLR.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand_roadCornerLR.png">
+<p>tileSand_roadCornerLR.png</p>
+</td>
+<td><img alt="_images/tileSand_roadCrossingRound.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand_roadCrossingRound.png">
+<p>tileSand_roadCrossingRound.png</p>
+</td>
+<td><img alt="_images/tracksSmall.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tracksSmall.png">
+<p>tracksSmall.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tileSand2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand2.png">
+<p>tileSand2.png</p>
+</td>
+<td><img alt="_images/tank_red.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tank_red.png">
+<p>tank_red.png</p>
+</td>
+<td><img alt="_images/tankSand_barrel1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankSand_barrel1.png">
+<p>tankSand_barrel1.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tankGreen_barrel1_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankGreen_barrel1_outline.png">
+<p>tankGreen_barrel1_outline.png</p>
+</td>
+<td><img alt="_images/tankRed_barrel3_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankRed_barrel3_outline.png">
+<p>tankRed_barrel3_outline.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadSplitS.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadSplitS.png">
+<p>tileGrass_roadSplitS.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tankRed_barrel1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankRed_barrel1.png">
+<p>tankRed_barrel1.png</p>
+</td>
+<td><img alt="_images/tankDark_barrel2_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankDark_barrel2_outline.png">
+<p>tankDark_barrel2_outline.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadTransitionE_dirt.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadTransitionE_dirt.png">
+<p>tileGrass_roadTransitionE_dirt.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tankSand_barrel3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankSand_barrel3.png">
+<p>tankSand_barrel3.png</p>
+</td>
+<td><img alt="_images/tileGrass_transitionW.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_transitionW.png">
+<p>tileGrass_transitionW.png</p>
+</td>
+<td><img alt="_images/tankRed_barrel1_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankRed_barrel1_outline.png">
+<p>tankRed_barrel1_outline.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tankRed_barrel2_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankRed_barrel2_outline.png">
+<p>tankRed_barrel2_outline.png</p>
+</td>
+<td><img alt="_images/tankBody_darkLarge.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_darkLarge.png">
+<p>tankBody_darkLarge.png</p>
+</td>
+<td><img alt="_images/tileSand_roadNorth.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand_roadNorth.png">
+<p>tileSand_roadNorth.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/treeBrown_large.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/treeBrown_large.png">
+<p>treeBrown_large.png</p>
+</td>
+<td><img alt="_images/tileSand_roadSplitS.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand_roadSplitS.png">
+<p>tileSand_roadSplitS.png</p>
+</td>
+<td><img alt="_images/treeGreen_large.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/treeGreen_large.png">
+<p>treeGreen_large.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tankBody_dark.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_dark.png">
+<p>tankBody_dark.png</p>
+</td>
+<td><img alt="_images/tankBody_bigRed_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_bigRed_outline.png">
+<p>tankBody_bigRed_outline.png</p>
+</td>
+<td><img alt="_images/treeBrown_small.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/treeBrown_small.png">
+<p>treeBrown_small.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tankSand_barrel1_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankSand_barrel1_outline.png">
+<p>tankSand_barrel1_outline.png</p>
+</td>
+<td><img alt="_images/tankBlue_barrel3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBlue_barrel3.png">
+<p>tankBlue_barrel3.png</p>
+</td>
+<td><img alt="_images/tankBody_bigRed.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_bigRed.png">
+<p>tankBody_bigRed.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tileGrass_roadCornerLR.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadCornerLR.png">
+<p>tileGrass_roadCornerLR.png</p>
+</td>
+<td><img alt="_images/tank_dark.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tank_dark.png">
+<p>tank_dark.png</p>
+</td>
+<td><img alt="_images/tankBody_darkLarge_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_darkLarge_outline.png">
+<p>tankBody_darkLarge_outline.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tank_green.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tank_green.png">
+<p>tank_green.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadCrossingRound.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadCrossingRound.png">
+<p>tileGrass_roadCrossingRound.png</p>
+</td>
+<td><img alt="_images/tankSand_barrel3_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankSand_barrel3_outline.png">
+<p>tankSand_barrel3_outline.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tankBody_red_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_red_outline.png">
+<p>tankBody_red_outline.png</p>
+</td>
+<td><img alt="_images/tankBody_sand_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_sand_outline.png">
+<p>tankBody_sand_outline.png</p>
+</td>
+<td><img alt="_images/tileSand_roadCornerLL.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand_roadCornerLL.png">
+<p>tileSand_roadCornerLL.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tankBody_sand.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_sand.png">
+<p>tankBody_sand.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadTransitionW.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadTransitionW.png">
+<p>tileGrass_roadTransitionW.png</p>
+</td>
+<td><img alt="_images/tankBody_blue_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_blue_outline.png">
+<p>tankBody_blue_outline.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tankBody_green_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_green_outline.png">
+<p>tankBody_green_outline.png</p>
+</td>
+<td><img alt="_images/tankRed_barrel2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankRed_barrel2.png">
+<p>tankRed_barrel2.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadSplitE.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadSplitE.png">
+<p>tileGrass_roadSplitE.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tileGrass_roadCornerUL.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadCornerUL.png">
+<p>tileGrass_roadCornerUL.png</p>
+</td>
+<td><img alt="_images/tankBody_dark_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_dark_outline.png">
+<p>tankBody_dark_outline.png</p>
+</td>
+<td><img alt="_images/tankSand_barrel2_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankSand_barrel2_outline.png">
+<p>tankSand_barrel2_outline.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tileGrass_roadTransitionS_dirt.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadTransitionS_dirt.png">
+<p>tileGrass_roadTransitionS_dirt.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadSplitW.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadSplitW.png">
+<p>tileGrass_roadSplitW.png</p>
+</td>
+<td><img alt="_images/tank_sand.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tank_sand.png">
+<p>tank_sand.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tankSand_barrel2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankSand_barrel2.png">
+<p>tankSand_barrel2.png</p>
+</td>
+<td><img alt="_images/tankGreen_barrel3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankGreen_barrel3.png">
+<p>tankGreen_barrel3.png</p>
+</td>
+<td><img alt="_images/tankBlue_barrel1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBlue_barrel1.png">
+<p>tankBlue_barrel1.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tankBody_huge_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBody_huge_outline.png">
+<p>tankBody_huge_outline.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadEast.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadEast.png">
+<p>tileGrass_roadEast.png</p>
+</td>
+<td><img alt="_images/tankGreen_barrel2_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankGreen_barrel2_outline.png">
+<p>tankGreen_barrel2_outline.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tileSand_roadSplitW.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand_roadSplitW.png">
+<p>tileSand_roadSplitW.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadCrossing.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadCrossing.png">
+<p>tileGrass_roadCrossing.png</p>
+</td>
+<td><img alt="_images/tankBlue_barrel1_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBlue_barrel1_outline.png">
+<p>tankBlue_barrel1_outline.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tileSand_roadSplitE.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand_roadSplitE.png">
+<p>tileSand_roadSplitE.png</p>
+</td>
+<td><img alt="_images/tracksLarge.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tracksLarge.png">
+<p>tracksLarge.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadCornerLL.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadCornerLL.png">
+<p>tileGrass_roadCornerLL.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tankRed_barrel3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankRed_barrel3.png">
+<p>tankRed_barrel3.png</p>
+</td>
+<td><img alt="_images/tileGrass_transitionE.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_transitionE.png">
+<p>tileGrass_transitionE.png</p>
+</td>
+<td><img alt="_images/tileGrass_transitionN.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_transitionN.png">
+<p>tileGrass_transitionN.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tileGrass_roadTransitionW_dirt.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadTransitionW_dirt.png">
+<p>tileGrass_roadTransitionW_dirt.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadTransitionN.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadTransitionN.png">
+<p>tileGrass_roadTransitionN.png</p>
+</td>
+<td><img alt="_images/tankDark_barrel1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankDark_barrel1.png">
+<p>tankDark_barrel1.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tileGrass_roadSplitN.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadSplitN.png">
+<p>tileGrass_roadSplitN.png</p>
+</td>
+<td><img alt="_images/tileGrass1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass1.png">
+<p>tileGrass1.png</p>
+</td>
+<td><img alt="_images/tankGreen_barrel2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankGreen_barrel2.png">
+<p>tankGreen_barrel2.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tileSand1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand1.png">
+<p>tileSand1.png</p>
+</td>
+<td><img alt="_images/tileSand_roadSplitN.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileSand_roadSplitN.png">
+<p>tileSand_roadSplitN.png</p>
+</td>
+<td><img alt="_images/tank_blue.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tank_blue.png">
+<p>tank_blue.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tileGrass_roadTransitionS.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadTransitionS.png">
+<p>tileGrass_roadTransitionS.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadNorth.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadNorth.png">
+<p>tileGrass_roadNorth.png</p>
+</td>
+<td><img alt="_images/tileGrass_transitionS.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_transitionS.png">
+<p>tileGrass_transitionS.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/tankDark_barrel3_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankDark_barrel3_outline.png">
+<p>tankDark_barrel3_outline.png</p>
+</td>
+<td><img alt="_images/tileGrass_roadTransitionE.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tileGrass_roadTransitionE.png">
+<p>tileGrass_roadTransitionE.png</p>
+</td>
+<td><img alt="_images/tankDark_barrel3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankDark_barrel3.png">
+<p>tankDark_barrel3.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/tankBlue_barrel2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankBlue_barrel2.png">
+<p>tankBlue_barrel2.png</p>
+</td>
+<td><img alt="_images/tankDark_barrel1_outline.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/tankDark_barrel1_outline.png">
+<p>tankDark_barrel1_outline.png</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id23">
+<caption><span class="caption-text">:resources:images/space_shooter/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id23" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/meteorGrey_big4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/meteorGrey_big4.png">
+<p>meteorGrey_big4.png</p>
+</td>
+<td><img alt="_images/meteorGrey_tiny2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/meteorGrey_tiny2.png">
+<p>meteorGrey_tiny2.png</p>
+</td>
+<td><img alt="_images/laserBlue01.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/laserBlue01.png">
+<p>laserBlue01.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/playerShip1_green.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/playerShip1_green.png">
+<p>playerShip1_green.png</p>
+</td>
+<td><img alt="_images/meteorGrey_big1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/meteorGrey_big1.png">
+<p>meteorGrey_big1.png</p>
+</td>
+<td><img alt="_images/playerShip2_orange.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/playerShip2_orange.png">
+<p>playerShip2_orange.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/playerLife1_green.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/playerLife1_green.png">
+<p>playerLife1_green.png</p>
+</td>
+<td><img alt="_images/meteorGrey_big2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/meteorGrey_big2.png">
+<p>meteorGrey_big2.png</p>
+</td>
+<td><img alt="_images/playerShip1_orange.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/playerShip1_orange.png">
+<p>playerShip1_orange.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/playerLife1_blue.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/playerLife1_blue.png">
+<p>playerLife1_blue.png</p>
+</td>
+<td><img alt="_images/playerShip1_blue.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/playerShip1_blue.png">
+<p>playerShip1_blue.png</p>
+</td>
+<td><img alt="_images/meteorGrey_small2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/meteorGrey_small2.png">
+<p>meteorGrey_small2.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/meteorGrey_med2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/meteorGrey_med2.png">
+<p>meteorGrey_med2.png</p>
+</td>
+<td><img alt="_images/laserRed01.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/laserRed01.png">
+<p>laserRed01.png</p>
+</td>
+<td><img alt="_images/playerLife1_orange.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/playerLife1_orange.png">
+<p>playerLife1_orange.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/playerShip3_orange.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/playerShip3_orange.png">
+<p>playerShip3_orange.png</p>
+</td>
+<td><img alt="_images/meteorGrey_med1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/meteorGrey_med1.png">
+<p>meteorGrey_med1.png</p>
+</td>
+<td><img alt="_images/meteorGrey_tiny1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/meteorGrey_tiny1.png">
+<p>meteorGrey_tiny1.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/meteorGrey_small1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/meteorGrey_small1.png">
+<p>meteorGrey_small1.png</p>
+</td>
+<td><img alt="_images/meteorGrey_big3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/meteorGrey_big3.png">
+<p>meteorGrey_big3.png</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id24">
+<caption><span class="caption-text">:resources:images/tiles/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id24" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/snowHill_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowHill_left.png">
+<p>snowHill_left.png</p>
+</td>
+<td><img alt="_images/planetHalf_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetHalf_left.png">
+<p>planetHalf_left.png</p>
+</td>
+<td><img alt="_images/switchRed.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/switchRed.png">
+<p>switchRed.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/bridgeA.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/bridgeA.png">
+<p>bridgeA.png</p>
+</td>
+<td><img alt="_images/snowRight.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowRight.png">
+<p>snowRight.png</p>
+</td>
+<td><img alt="_images/planetCorner_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetCorner_left.png">
+<p>planetCorner_left.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/mushroomRed.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/mushroomRed.png">
+<p>mushroomRed.png</p>
+</td>
+<td><img alt="_images/grassHill_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassHill_left.png">
+<p>grassHill_left.png</p>
+</td>
+<td><img alt="_images/dirtHalf_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtHalf_right.png">
+<p>dirtHalf_right.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/dirtCliff_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtCliff_left.png">
+<p>dirtCliff_left.png</p>
+</td>
+<td><img alt="_images/planetCenter.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetCenter.png">
+<p>planetCenter.png</p>
+</td>
+<td><img alt="_images/grassCorner_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassCorner_right.png">
+<p>grassCorner_right.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/snowCenter_rounded.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowCenter_rounded.png">
+<p>snowCenter_rounded.png</p>
+</td>
+<td><img alt="_images/grassCliffAlt_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassCliffAlt_left.png">
+<p>grassCliffAlt_left.png</p>
+</td>
+<td><img alt="_images/snowCliffAlt_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowCliffAlt_left.png">
+<p>snowCliffAlt_left.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/lockRed.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/lockRed.png">
+<p>lockRed.png</p>
+</td>
+<td><img alt="_images/dirtCenter_rounded.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtCenter_rounded.png">
+<p>dirtCenter_rounded.png</p>
+</td>
+<td><img alt="_images/spikes.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/spikes.png">
+<p>spikes.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/bridgeB.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/bridgeB.png">
+<p>bridgeB.png</p>
+</td>
+<td><img alt="_images/grassCliff_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassCliff_left.png">
+<p>grassCliff_left.png</p>
+</td>
+<td><img alt="_images/sandHalf_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandHalf_right.png">
+<p>sandHalf_right.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/stoneHill_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneHill_left.png">
+<p>stoneHill_left.png</p>
+</td>
+<td><img alt="_images/leverLeft.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/leverLeft.png">
+<p>leverLeft.png</p>
+</td>
+<td><img alt="_images/lava.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/lava.png">
+<p>lava.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/grassHalf.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassHalf.png">
+<p>grassHalf.png</p>
+</td>
+<td><img alt="_images/sand.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sand.png">
+<p>sand.png</p>
+</td>
+<td><img alt="_images/sandCorner_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandCorner_left.png">
+<p>sandCorner_left.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/doorClosed_mid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/doorClosed_mid.png">
+<p>doorClosed_mid.png</p>
+</td>
+<td><img alt="_images/dirt.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirt.png">
+<p>dirt.png</p>
+</td>
+<td><img alt="_images/snowMid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowMid.png">
+<p>snowMid.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/snowCorner_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowCorner_left.png">
+<p>snowCorner_left.png</p>
+</td>
+<td><img alt="_images/ladderTop1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/ladderTop1.png">
+<p>ladderTop.png</p>
+</td>
+<td><img alt="_images/stoneHalf_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneHalf_right.png">
+<p>stoneHalf_right.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/grassMid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassMid.png">
+<p>grassMid.png</p>
+</td>
+<td><img alt="_images/grass_sprout.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grass_sprout.png">
+<p>grass_sprout.png</p>
+</td>
+<td><img alt="_images/planetLeft.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetLeft.png">
+<p>planetLeft.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/snowLeft.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowLeft.png">
+<p>snowLeft.png</p>
+</td>
+<td><img alt="_images/stoneMid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneMid.png">
+<p>stoneMid.png</p>
+</td>
+<td><img alt="_images/planetCliffAlt_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetCliffAlt_left.png">
+<p>planetCliffAlt_left.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/switchGreen_pressed.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/switchGreen_pressed.png">
+<p>switchGreen_pressed.png</p>
+</td>
+<td><img alt="_images/grassCliffAlt_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassCliffAlt_right.png">
+<p>grassCliffAlt_right.png</p>
+</td>
+<td><img alt="_images/sandHill_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandHill_right.png">
+<p>sandHill_right.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/dirtCliffAlt_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtCliffAlt_right.png">
+<p>dirtCliffAlt_right.png</p>
+</td>
+<td><img alt="_images/stoneRight.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneRight.png">
+<p>stoneRight.png</p>
+</td>
+<td><img alt="_images/stoneCliff_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneCliff_right.png">
+<p>stoneCliff_right.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/water.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/water.png">
+<p>water.png</p>
+</td>
+<td><img alt="_images/grassRight.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassRight.png">
+<p>grassRight.png</p>
+</td>
+<td><img alt="_images/signRight.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/signRight.png">
+<p>signRight.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/brickTextureWhite.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/brickTextureWhite.png">
+<p>brickTextureWhite.png</p>
+</td>
+<td><img alt="_images/stoneHalf_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneHalf_left.png">
+<p>stoneHalf_left.png</p>
+</td>
+<td><img alt="_images/planetRight.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetRight.png">
+<p>planetRight.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/sandHalf.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandHalf.png">
+<p>sandHalf.png</p>
+</td>
+<td><img alt="_images/stoneHill_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneHill_right.png">
+<p>stoneHill_right.png</p>
+</td>
+<td><img alt="_images/sandCenter.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandCenter.png">
+<p>sandCenter.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/snowCliff_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowCliff_right.png">
+<p>snowCliff_right.png</p>
+</td>
+<td><img alt="_images/snowHalf_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowHalf_right.png">
+<p>snowHalf_right.png</p>
+</td>
+<td><img alt="_images/plantPurple.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/plantPurple.png">
+<p>plantPurple.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/cactus.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cactus.png">
+<p>cactus.png</p>
+</td>
+<td><img alt="_images/dirtCliff_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtCliff_right.png">
+<p>dirtCliff_right.png</p>
+</td>
+<td><img alt="_images/snow_pile.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snow_pile.png">
+<p>snow_pile.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/grassCliff_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassCliff_right.png">
+<p>grassCliff_right.png</p>
+</td>
+<td><img alt="_images/dirtHill_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtHill_left.png">
+<p>dirtHill_left.png</p>
+</td>
+<td><img alt="_images/sandHill_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandHill_left.png">
+<p>sandHill_left.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/grassHalf_mid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassHalf_mid.png">
+<p>grassHalf_mid.png</p>
+</td>
+<td><img alt="_images/sandRight.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandRight.png">
+<p>sandRight.png</p>
+</td>
+<td><img alt="_images/grassCenter_round.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassCenter_round.png">
+<p>grassCenter_round.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/stoneCenter_rounded.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneCenter_rounded.png">
+<p>stoneCenter_rounded.png</p>
+</td>
+<td><img alt="_images/dirtHill_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtHill_right.png">
+<p>dirtHill_right.png</p>
+</td>
+<td><img alt="_images/sandLeft.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandLeft.png">
+<p>sandLeft.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/planetCliff_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetCliff_left.png">
+<p>planetCliff_left.png</p>
+</td>
+<td><img alt="_images/leverMid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/leverMid.png">
+<p>leverMid.png</p>
+</td>
+<td><img alt="_images/dirtCorner_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtCorner_right.png">
+<p>dirtCorner_right.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/leverRight.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/leverRight.png">
+<p>leverRight.png</p>
+</td>
+<td><img alt="_images/rock.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/rock.png">
+<p>rock.png</p>
+</td>
+<td><img alt="_images/dirtCorner_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtCorner_left.png">
+<p>dirtCorner_left.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/snowCliff_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowCliff_left.png">
+<p>snowCliff_left.png</p>
+</td>
+<td><img alt="_images/snowCliffAlt_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowCliffAlt_right.png">
+<p>snowCliffAlt_right.png</p>
+</td>
+<td><img alt="_images/snowCenter.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowCenter.png">
+<p>snowCenter.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/planetMid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetMid.png">
+<p>planetMid.png</p>
+</td>
+<td><img alt="_images/sandCorner_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandCorner_right.png">
+<p>sandCorner_right.png</p>
+</td>
+<td><img alt="_images/stoneHalf.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneHalf.png">
+<p>stoneHalf.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/dirtCenter.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtCenter.png">
+<p>dirtCenter.png</p>
+</td>
+<td><img alt="_images/snowHalf_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowHalf_left.png">
+<p>snowHalf_left.png</p>
+</td>
+<td><img alt="_images/dirtCliffAlt_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtCliffAlt_left.png">
+<p>dirtCliffAlt_left.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/boxCrate_single.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/boxCrate_single.png">
+<p>boxCrate_single.png</p>
+</td>
+<td><img alt="_images/ladderMid1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/ladderMid1.png">
+<p>ladderMid.png</p>
+</td>
+<td><img alt="_images/snow2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snow2.png">
+<p>snow.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/dirtMid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtMid.png">
+<p>dirtMid.png</p>
+</td>
+<td><img alt="_images/sandCliff_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandCliff_left.png">
+<p>sandCliff_left.png</p>
+</td>
+<td><img alt="_images/planetHalf.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetHalf.png">
+<p>planetHalf.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/grassHalf_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassHalf_left.png">
+<p>grassHalf_left.png</p>
+</td>
+<td><img alt="_images/stoneLeft.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneLeft.png">
+<p>stoneLeft.png</p>
+</td>
+<td><img alt="_images/snowHalf_mid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowHalf_mid.png">
+<p>snowHalf_mid.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/sandHalf_mid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandHalf_mid.png">
+<p>sandHalf_mid.png</p>
+</td>
+<td><img alt="_images/brickBrown.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/brickBrown.png">
+<p>brickBrown.png</p>
+</td>
+<td><img alt="_images/dirtRight.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtRight.png">
+<p>dirtRight.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/waterTop_low.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/waterTop_low.png">
+<p>waterTop_low.png</p>
+</td>
+<td><img alt="_images/stone.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stone.png">
+<p>stone.png</p>
+</td>
+<td><img alt="_images/lavaTop_high.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/lavaTop_high.png">
+<p>lavaTop_high.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/signExit.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/signExit.png">
+<p>signExit.png</p>
+</td>
+<td><img alt="_images/grassHalf_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassHalf_right.png">
+<p>grassHalf_right.png</p>
+</td>
+<td><img alt="_images/stoneCliffAlt_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneCliffAlt_right.png">
+<p>stoneCliffAlt_right.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/dirtHalf_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtHalf_left.png">
+<p>dirtHalf_left.png</p>
+</td>
+<td><img alt="_images/lockYellow.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/lockYellow.png">
+<p>lockYellow.png</p>
+</td>
+<td><img alt="_images/planetHalf_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetHalf_right.png">
+<p>planetHalf_right.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/switchGreen.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/switchGreen.png">
+<p>switchGreen.png</p>
+</td>
+<td><img alt="_images/planetHill_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetHill_right.png">
+<p>planetHill_right.png</p>
+</td>
+<td><img alt="_images/waterTop_high.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/waterTop_high.png">
+<p>waterTop_high.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/sandCliffAlt_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandCliffAlt_right.png">
+<p>sandCliffAlt_right.png</p>
+</td>
+<td><img alt="_images/planetCliffAlt_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetCliffAlt_right.png">
+<p>planetCliffAlt_right.png</p>
+</td>
+<td><img alt="_images/doorClosed_top.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/doorClosed_top.png">
+<p>doorClosed_top.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/boxCrate.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/boxCrate.png">
+<p>boxCrate.png</p>
+</td>
+<td><img alt="_images/sandCenter_rounded.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandCenter_rounded.png">
+<p>sandCenter_rounded.png</p>
+</td>
+<td><img alt="_images/torchOff.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/torchOff.png">
+<p>torchOff.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/torch2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/torch2.png">
+<p>torch2.png</p>
+</td>
+<td><img alt="_images/stoneCenter.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneCenter.png">
+<p>stoneCenter.png</p>
+</td>
+<td><img alt="_images/dirtLeft.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtLeft.png">
+<p>dirtLeft.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/stoneCliff_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneCliff_left.png">
+<p>stoneCliff_left.png</p>
+</td>
+<td><img alt="_images/grassHill_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassHill_right.png">
+<p>grassHill_right.png</p>
+</td>
+<td><img alt="_images/snowHalf.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowHalf.png">
+<p>snowHalf.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/planet.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planet.png">
+<p>planet.png</p>
+</td>
+<td><img alt="_images/stoneHalf_mid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneHalf_mid.png">
+<p>stoneHalf_mid.png</p>
+</td>
+<td><img alt="_images/torch1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/torch1.png">
+<p>torch1.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/planetHill_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetHill_left.png">
+<p>planetHill_left.png</p>
+</td>
+<td><img alt="_images/sandHalf_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandHalf_left.png">
+<p>sandHalf_left.png</p>
+</td>
+<td><img alt="_images/switchRed_pressed.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/switchRed_pressed.png">
+<p>switchRed_pressed.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/planetCenter_rounded.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetCenter_rounded.png">
+<p>planetCenter_rounded.png</p>
+</td>
+<td><img alt="_images/snowHill_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowHill_right.png">
+<p>snowHill_right.png</p>
+</td>
+<td><img alt="_images/stoneCorner_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneCorner_right.png">
+<p>stoneCorner_right.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/bush.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/bush.png">
+<p>bush.png</p>
+</td>
+<td><img alt="_images/lavaTop_low.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/lavaTop_low.png">
+<p>lavaTop_low.png</p>
+</td>
+<td><img alt="_images/dirtHalf.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtHalf.png">
+<p>dirtHalf.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/grassCenter.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassCenter.png">
+<p>grassCenter.png</p>
+</td>
+<td><img alt="_images/signLeft.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/signLeft.png">
+<p>signLeft.png</p>
+</td>
+<td><img alt="_images/sandCliff_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandCliff_right.png">
+<p>sandCliff_right.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/sandCliffAlt_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandCliffAlt_left.png">
+<p>sandCliffAlt_left.png</p>
+</td>
+<td><img alt="_images/grassLeft.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassLeft.png">
+<p>grassLeft.png</p>
+</td>
+<td><img alt="_images/boxCrate_double.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/boxCrate_double.png">
+<p>boxCrate_double.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/dirtHalf_mid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/dirtHalf_mid.png">
+<p>dirtHalf_mid.png</p>
+</td>
+<td><img alt="_images/snowCorner_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/snowCorner_right.png">
+<p>snowCorner_right.png</p>
+</td>
+<td><img alt="_images/bomb.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/bomb.png">
+<p>bomb.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/planetCorner_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetCorner_right.png">
+<p>planetCorner_right.png</p>
+</td>
+<td><img alt="_images/grass.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grass.png">
+<p>grass.png</p>
+</td>
+<td><img alt="_images/brickGrey.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/brickGrey.png">
+<p>brickGrey.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/planetHalf_mid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetHalf_mid.png">
+<p>planetHalf_mid.png</p>
+</td>
+<td><img alt="_images/sandMid.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sandMid.png">
+<p>sandMid.png</p>
+</td>
+<td><img alt="_images/stoneCorner_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneCorner_left.png">
+<p>stoneCorner_left.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/stoneCliffAlt_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/stoneCliffAlt_left.png">
+<p>stoneCliffAlt_left.png</p>
+</td>
+<td><img alt="_images/grassCorner_left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/grassCorner_left.png">
+<p>grassCorner_left.png</p>
+</td>
+<td><img alt="_images/planetCliff_right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/planetCliff_right.png">
+<p>planetCliff_right.png</p>
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id25">
+<caption><span class="caption-text">:resources:images/alien/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id25" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/alienBlue_climb2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/alienBlue_climb2.png">
+<p>alienBlue_climb2.png</p>
+</td>
+<td><img alt="_images/alienBlue_walk1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/alienBlue_walk1.png">
+<p>alienBlue_walk1.png</p>
+</td>
+<td><img alt="_images/alienBlue_walk2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/alienBlue_walk2.png">
+<p>alienBlue_walk2.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/alienBlue_front.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/alienBlue_front.png">
+<p>alienBlue_front.png</p>
+</td>
+<td><img alt="_images/alienBlue_climb1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/alienBlue_climb1.png">
+<p>alienBlue_climb1.png</p>
+</td>
+<td><img alt="_images/alienBlue_jump.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/alienBlue_jump.png">
+<p>alienBlue_jump.png</p>
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id26">
+<caption><span class="caption-text">:resources:images/cards/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id26" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/cardBack_green5.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_green5.png">
+<p>cardBack_green5.png</p>
+</td>
+<td><img alt="_images/cardDiamonds9.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardDiamonds9.png">
+<p>cardDiamonds9.png</p>
+</td>
+<td><img alt="_images/cardClubsK.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardClubsK.png">
+<p>cardClubsK.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/cardDiamondsQ.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardDiamondsQ.png">
+<p>cardDiamondsQ.png</p>
+</td>
+<td><img alt="_images/cardBack_blue3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_blue3.png">
+<p>cardBack_blue3.png</p>
+</td>
+<td><img alt="_images/cardSpades8.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardSpades8.png">
+<p>cardSpades8.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/cardHearts5.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardHearts5.png">
+<p>cardHearts5.png</p>
+</td>
+<td><img alt="_images/cardBack_red5.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_red5.png">
+<p>cardBack_red5.png</p>
+</td>
+<td><img alt="_images/cardSpades6.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardSpades6.png">
+<p>cardSpades6.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/cardHeartsJ.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardHeartsJ.png">
+<p>cardHeartsJ.png</p>
+</td>
+<td><img alt="_images/cardSpades5.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardSpades5.png">
+<p>cardSpades5.png</p>
+</td>
+<td><img alt="_images/cardClubs7.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardClubs7.png">
+<p>cardClubs7.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/cardClubs5.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardClubs5.png">
+<p>cardClubs5.png</p>
+</td>
+<td><img alt="_images/cardHearts6.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardHearts6.png">
+<p>cardHearts6.png</p>
+</td>
+<td><img alt="_images/cardClubsJ.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardClubsJ.png">
+<p>cardClubsJ.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/cardClubs4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardClubs4.png">
+<p>cardClubs4.png</p>
+</td>
+<td><img alt="_images/cardHearts4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardHearts4.png">
+<p>cardHearts4.png</p>
+</td>
+<td><img alt="_images/cardBack_red3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_red3.png">
+<p>cardBack_red3.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/cardHearts10.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardHearts10.png">
+<p>cardHearts10.png</p>
+</td>
+<td><img alt="_images/cardSpades4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardSpades4.png">
+<p>cardSpades4.png</p>
+</td>
+<td><img alt="_images/cardDiamondsK.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardDiamondsK.png">
+<p>cardDiamondsK.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/cardBack_blue4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_blue4.png">
+<p>cardBack_blue4.png</p>
+</td>
+<td><img alt="_images/cardBack_red2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_red2.png">
+<p>cardBack_red2.png</p>
+</td>
+<td><img alt="_images/cardBack_green3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_green3.png">
+<p>cardBack_green3.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/cardSpadesK.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardSpadesK.png">
+<p>cardSpadesK.png</p>
+</td>
+<td><img alt="_images/cardBack_blue2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_blue2.png">
+<p>cardBack_blue2.png</p>
+</td>
+<td><img alt="_images/cardClubs6.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardClubs6.png">
+<p>cardClubs6.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/cardHearts3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardHearts3.png">
+<p>cardHearts3.png</p>
+</td>
+<td><img alt="_images/cardClubs9.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardClubs9.png">
+<p>cardClubs9.png</p>
+</td>
+<td><img alt="_images/cardDiamondsA.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardDiamondsA.png">
+<p>cardDiamondsA.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/cardBack_red1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_red1.png">
+<p>cardBack_red1.png</p>
+</td>
+<td><img alt="_images/cardDiamonds5.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardDiamonds5.png">
+<p>cardDiamonds5.png</p>
+</td>
+<td><img alt="_images/cardClubs3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardClubs3.png">
+<p>cardClubs3.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/cardSpadesQ.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardSpadesQ.png">
+<p>cardSpadesQ.png</p>
+</td>
+<td><img alt="_images/cardDiamonds2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardDiamonds2.png">
+<p>cardDiamonds2.png</p>
+</td>
+<td><img alt="_images/cardClubsQ.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardClubsQ.png">
+<p>cardClubsQ.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/cardSpadesJ.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardSpadesJ.png">
+<p>cardSpadesJ.png</p>
+</td>
+<td><img alt="_images/cardHeartsQ.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardHeartsQ.png">
+<p>cardHeartsQ.png</p>
+</td>
+<td><img alt="_images/cardHeartsK.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardHeartsK.png">
+<p>cardHeartsK.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/cardSpades3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardSpades3.png">
+<p>cardSpades3.png</p>
+</td>
+<td><img alt="_images/cardSpadesA.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardSpadesA.png">
+<p>cardSpadesA.png</p>
+</td>
+<td><img alt="_images/cardClubs8.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardClubs8.png">
+<p>cardClubs8.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/cardHeartsA.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardHeartsA.png">
+<p>cardHeartsA.png</p>
+</td>
+<td><img alt="_images/cardDiamonds8.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardDiamonds8.png">
+<p>cardDiamonds8.png</p>
+</td>
+<td><img alt="_images/cardBack_green2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_green2.png">
+<p>cardBack_green2.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/cardSpades10.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardSpades10.png">
+<p>cardSpades10.png</p>
+</td>
+<td><img alt="_images/cardHearts8.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardHearts8.png">
+<p>cardHearts8.png</p>
+</td>
+<td><img alt="_images/cardDiamonds7.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardDiamonds7.png">
+<p>cardDiamonds7.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/cardHearts7.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardHearts7.png">
+<p>cardHearts7.png</p>
+</td>
+<td><img alt="_images/cardDiamondsJ.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardDiamondsJ.png">
+<p>cardDiamondsJ.png</p>
+</td>
+<td><img alt="_images/cardSpades7.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardSpades7.png">
+<p>cardSpades7.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/cardDiamonds4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardDiamonds4.png">
+<p>cardDiamonds4.png</p>
+</td>
+<td><img alt="_images/cardBack_red4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_red4.png">
+<p>cardBack_red4.png</p>
+</td>
+<td><img alt="_images/cardHearts9.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardHearts9.png">
+<p>cardHearts9.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/cardBack_green4.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_green4.png">
+<p>cardBack_green4.png</p>
+</td>
+<td><img alt="_images/cardSpades2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardSpades2.png">
+<p>cardSpades2.png</p>
+</td>
+<td><img alt="_images/cardSpades9.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardSpades9.png">
+<p>cardSpades9.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/cardJoker.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardJoker.png">
+<p>cardJoker.png</p>
+</td>
+<td><img alt="_images/cardClubs2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardClubs2.png">
+<p>cardClubs2.png</p>
+</td>
+<td><img alt="_images/cardDiamonds6.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardDiamonds6.png">
+<p>cardDiamonds6.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/cardHearts2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardHearts2.png">
+<p>cardHearts2.png</p>
+</td>
+<td><img alt="_images/cardClubs10.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardClubs10.png">
+<p>cardClubs10.png</p>
+</td>
+<td><img alt="_images/cardBack_green1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_green1.png">
+<p>cardBack_green1.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/cardDiamonds10.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardDiamonds10.png">
+<p>cardDiamonds10.png</p>
+</td>
+<td><img alt="_images/cardBack_blue1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_blue1.png">
+<p>cardBack_blue1.png</p>
+</td>
+<td><img alt="_images/cardDiamonds3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardDiamonds3.png">
+<p>cardDiamonds3.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/cardBack_blue5.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardBack_blue5.png">
+<p>cardBack_blue5.png</p>
+</td>
+<td><img alt="_images/cardClubsA.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cardClubsA.png">
+<p>cardClubsA.png</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id27">
+<caption><span class="caption-text">:resources:onscreen_controls/shaded_dark/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id27" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/play.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/play.png">
+<p>play.png</p>
+</td>
+<td><img alt="_images/left.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/left.png">
+<p>left.png</p>
+</td>
+<td><img alt="_images/down.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/down.png">
+<p>down.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/hamburger.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/hamburger.png">
+<p>hamburger.png</p>
+</td>
+<td><img alt="_images/back.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/back.png">
+<p>back.png</p>
+</td>
+<td><img alt="_images/expand.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/expand.png">
+<p>expand.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/star_round.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/star_round.png">
+<p>star_round.png</p>
+</td>
+<td><img alt="_images/a.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/a.png">
+<p>a.png</p>
+</td>
+<td><img alt="_images/save.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/save.png">
+<p>save.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/up.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/up.png">
+<p>up.png</p>
+</td>
+<td><img alt="_images/x.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/x.png">
+<p>x.png</p>
+</td>
+<td><img alt="_images/b.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/b.png">
+<p>b.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/unchecked.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/unchecked.png">
+<p>unchecked.png</p>
+</td>
+<td><img alt="_images/pause.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/pause.png">
+<p>pause.png</p>
+</td>
+<td><img alt="_images/start.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/start.png">
+<p>start.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/pause_square.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/pause_square.png">
+<p>pause_square.png</p>
+</td>
+<td><img alt="_images/wrench.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/wrench.png">
+<p>wrench.png</p>
+</td>
+<td><img alt="_images/cancel.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cancel.png">
+<p>cancel.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/l.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/l.png">
+<p>l.png</p>
+</td>
+<td><img alt="_images/key_square.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/key_square.png">
+<p>key_square.png</p>
+</td>
+<td><img alt="_images/music_on.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/music_on.png">
+<p>music_on.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/right.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/right.png">
+<p>right.png</p>
+</td>
+<td><img alt="_images/sound_off.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sound_off.png">
+<p>sound_off.png</p>
+</td>
+<td><img alt="_images/select.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/select.png">
+<p>select.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/star_square.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/star_square.png">
+<p>star_square.png</p>
+</td>
+<td><img alt="_images/gear.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/gear.png">
+<p>gear.png</p>
+</td>
+<td><img alt="_images/music_off.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/music_off.png">
+<p>music_off.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/key_round.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/key_round.png">
+<p>key_round.png</p>
+</td>
+<td><img alt="_images/y.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/y.png">
+<p>y.png</p>
+</td>
+<td><img alt="_images/close.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/close.png">
+<p>close.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/search.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/search.png">
+<p>search.png</p>
+</td>
+<td><img alt="_images/sound_on.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sound_on.png">
+<p>sound_on.png</p>
+</td>
+<td><img alt="_images/r.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/r.png">
+<p>r.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/checked.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/checked.png">
+<p>checked.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id28">
+<caption><span class="caption-text">:resources:onscreen_controls/shaded_light/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id28" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/play1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/play1.png">
+<p>play.png</p>
+</td>
+<td><img alt="_images/left1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/left1.png">
+<p>left.png</p>
+</td>
+<td><img alt="_images/down1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/down1.png">
+<p>down.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/hamburger1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/hamburger1.png">
+<p>hamburger.png</p>
+</td>
+<td><img alt="_images/back1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/back1.png">
+<p>back.png</p>
+</td>
+<td><img alt="_images/expand1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/expand1.png">
+<p>expand.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/star_round1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/star_round1.png">
+<p>star_round.png</p>
+</td>
+<td><img alt="_images/a1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/a1.png">
+<p>a.png</p>
+</td>
+<td><img alt="_images/save1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/save1.png">
+<p>save.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/up1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/up1.png">
+<p>up.png</p>
+</td>
+<td><img alt="_images/x1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/x1.png">
+<p>x.png</p>
+</td>
+<td><img alt="_images/b1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/b1.png">
+<p>b.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/unchecked1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/unchecked1.png">
+<p>unchecked.png</p>
+</td>
+<td><img alt="_images/pause1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/pause1.png">
+<p>pause.png</p>
+</td>
+<td><img alt="_images/start1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/start1.png">
+<p>start.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/pause_square1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/pause_square1.png">
+<p>pause_square.png</p>
+</td>
+<td><img alt="_images/wrench1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/wrench1.png">
+<p>wrench.png</p>
+</td>
+<td><img alt="_images/cancel1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cancel1.png">
+<p>cancel.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/l1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/l1.png">
+<p>l.png</p>
+</td>
+<td><img alt="_images/music_on1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/music_on1.png">
+<p>music_on.png</p>
+</td>
+<td><img alt="_images/right1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/right1.png">
+<p>right.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/sound_off1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sound_off1.png">
+<p>sound_off.png</p>
+</td>
+<td><img alt="_images/select1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/select1.png">
+<p>select.png</p>
+</td>
+<td><img alt="_images/star_square1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/star_square1.png">
+<p>star_square.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/gear1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/gear1.png">
+<p>gear.png</p>
+</td>
+<td><img alt="_images/music_off1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/music_off1.png">
+<p>music_off.png</p>
+</td>
+<td><img alt="_images/key_round1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/key_round1.png">
+<p>key_round.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/y1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/y1.png">
+<p>y.png</p>
+</td>
+<td><img alt="_images/key.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/key.png">
+<p>key.png</p>
+</td>
+<td><img alt="_images/close1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/close1.png">
+<p>close.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/search1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/search1.png">
+<p>search.png</p>
+</td>
+<td><img alt="_images/sound_on1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sound_on1.png">
+<p>sound_on.png</p>
+</td>
+<td><img alt="_images/r1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/r1.png">
+<p>r.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/checked1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/checked1.png">
+<p>checked.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id29">
+<caption><span class="caption-text">:resources:onscreen_controls/flat_dark/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id29" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/play2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/play2.png">
+<p>play.png</p>
+</td>
+<td><img alt="_images/left2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/left2.png">
+<p>left.png</p>
+</td>
+<td><img alt="_images/down2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/down2.png">
+<p>down.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/hamburger2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/hamburger2.png">
+<p>hamburger.png</p>
+</td>
+<td><img alt="_images/expand2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/expand2.png">
+<p>expand.png</p>
+</td>
+<td><img alt="_images/a2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/a2.png">
+<p>a.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/save2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/save2.png">
+<p>save.png</p>
+</td>
+<td><img alt="_images/up2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/up2.png">
+<p>up.png</p>
+</td>
+<td><img alt="_images/x2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/x2.png">
+<p>x.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/b2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/b2.png">
+<p>b.png</p>
+</td>
+<td><img alt="_images/unchecked2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/unchecked2.png">
+<p>unchecked.png</p>
+</td>
+<td><img alt="_images/pause2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/pause2.png">
+<p>pause.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/start2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/start2.png">
+<p>start.png</p>
+</td>
+<td><img alt="_images/pause_square2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/pause_square2.png">
+<p>pause_square.png</p>
+</td>
+<td><img alt="_images/wrench2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/wrench2.png">
+<p>wrench.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/cancel2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cancel2.png">
+<p>cancel.png</p>
+</td>
+<td><img alt="_images/l2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/l2.png">
+<p>l.png</p>
+</td>
+<td><img alt="_images/key_square1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/key_square1.png">
+<p>key_square.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/flatDark20.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/flatDark20.png">
+<p>flatDark20.png</p>
+</td>
+<td><img alt="_images/music_on2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/music_on2.png">
+<p>music_on.png</p>
+</td>
+<td><img alt="_images/right2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/right2.png">
+<p>right.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/sound_off2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sound_off2.png">
+<p>sound_off.png</p>
+</td>
+<td><img alt="_images/star1.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/star1.png">
+<p>star.png</p>
+</td>
+<td><img alt="_images/select2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/select2.png">
+<p>select.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/star_square2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/star_square2.png">
+<p>star_square.png</p>
+</td>
+<td><img alt="_images/gear2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/gear2.png">
+<p>gear.png</p>
+</td>
+<td><img alt="_images/music_off2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/music_off2.png">
+<p>music_off.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/key_round2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/key_round2.png">
+<p>key_round.png</p>
+</td>
+<td><img alt="_images/y2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/y2.png">
+<p>y.png</p>
+</td>
+<td><img alt="_images/close2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/close2.png">
+<p>close.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/search2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/search2.png">
+<p>search.png</p>
+</td>
+<td><img alt="_images/sound_on2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sound_on2.png">
+<p>sound_on.png</p>
+</td>
+<td><img alt="_images/r2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/r2.png">
+<p>r.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/checked2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/checked2.png">
+<p>checked.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id30">
+<caption><span class="caption-text">:resources:onscreen_controls/flat_light/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id30" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><img alt="_images/play3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/play3.png">
+<p>play.png</p>
+</td>
+<td><img alt="_images/left3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/left3.png">
+<p>left.png</p>
+</td>
+<td><img alt="_images/down3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/down3.png">
+<p>down.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/hamburger3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/hamburger3.png">
+<p>hamburger.png</p>
+</td>
+<td><img alt="_images/back2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/back2.png">
+<p>back.png</p>
+</td>
+<td><img alt="_images/expand3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/expand3.png">
+<p>expand.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/star_round2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/star_round2.png">
+<p>star_round.png</p>
+</td>
+<td><img alt="_images/a3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/a3.png">
+<p>a.png</p>
+</td>
+<td><img alt="_images/save3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/save3.png">
+<p>save.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/up3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/up3.png">
+<p>up.png</p>
+</td>
+<td><img alt="_images/x3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/x3.png">
+<p>x.png</p>
+</td>
+<td><img alt="_images/b3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/b3.png">
+<p>b.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/unchecked3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/unchecked3.png">
+<p>unchecked.png</p>
+</td>
+<td><img alt="_images/pause3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/pause3.png">
+<p>pause.png</p>
+</td>
+<td><img alt="_images/start3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/start3.png">
+<p>start.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/pause_square3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/pause_square3.png">
+<p>pause_square.png</p>
+</td>
+<td><img alt="_images/wrench3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/wrench3.png">
+<p>wrench.png</p>
+</td>
+<td><img alt="_images/cancel3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/cancel3.png">
+<p>cancel.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/l3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/l3.png">
+<p>l.png</p>
+</td>
+<td><img alt="_images/key_square2.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/key_square2.png">
+<p>key_square.png</p>
+</td>
+<td><img alt="_images/music_on3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/music_on3.png">
+<p>music_on.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/right3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/right3.png">
+<p>right.png</p>
+</td>
+<td><img alt="_images/sound_off3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sound_off3.png">
+<p>sound_off.png</p>
+</td>
+<td><img alt="_images/select3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/select3.png">
+<p>select.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/star_square3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/star_square3.png">
+<p>star_square.png</p>
+</td>
+<td><img alt="_images/gear3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/gear3.png">
+<p>gear.png</p>
+</td>
+<td><img alt="_images/music_off3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/music_off3.png">
+<p>music_off.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/key_round3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/key_round3.png">
+<p>key_round.png</p>
+</td>
+<td><img alt="_images/y3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/y3.png">
+<p>y.png</p>
+</td>
+<td><img alt="_images/close3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/close3.png">
+<p>close.png</p>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/search3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/search3.png">
+<p>search.png</p>
+</td>
+<td><img alt="_images/sound_on3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/sound_on3.png">
+<p>sound_on.png</p>
+</td>
+<td><img alt="_images/r3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/r3.png">
+<p>r.png</p>
+</td>
+</tr>
+<tr class="row-even"><td><img alt="_images/checked3.png" src="./Resources — Python Arcade Library 2.6.5 documentation_files/checked3.png">
+<p>checked.png</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="colwidths-given resource-table docutils align-default" id="id31">
+<caption><span class="caption-text">:resources:music/</span><a class="headerlink" href="https://api.arcade.academy/en/latest/resources.html#id31" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/music/funkyrobot.mp3?raw=true" type="audio/mpeg"></audio><br>funkyrobot.mp3</td>
+<td><audio controls=""><source src="https://github.com/pythonarcade/arcade/blob/development/arcade/resources/music/1918.mp3?raw=true" type="audio/mpeg"></audio><br>1918.mp3</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="https://api.arcade.academy/en/latest/arcade.color.html" class="btn btn-neutral float-left" title="arcade.color package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="https://api.arcade.academy/en/latest/keyboard.html" class="btn btn-neutral float-right" title="Working with the Keyboard" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>© Copyright 2021, Paul Vincent Craven.
+      <span class="commit">Revision <code>fcac0183</code>.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org/">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions"><!-- Inserted RTD Footer -->
+
+<div class="injected">
+
+  
+
+      
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+        <dd class="rtd-current-item">
+          <a href="https://api.arcade.academy/en/latest/resources.html">latest</a>
+        </dd>
+        
+        <dd>
+          <a href="https://api.arcade.academy/en/stable/resources.html">stable</a>
+        </dd>
+        
+        <dd>
+          <a href="https://api.arcade.academy/en/2.6.5/resources.html">2.6.5</a>
+        </dd>
+        
+        <dd>
+          <a href="https://api.arcade.academy/en/2.6.4/resources.html">2.6.4</a>
+        </dd>
+        
+        <dd>
+          <a href="https://api.arcade.academy/en/2.6.3/resources.html">2.6.3</a>
+        </dd>
+        
+        <dd>
+          <a href="https://api.arcade.academy/en/2.6.2/resources.html">2.6.2</a>
+        </dd>
+        
+        <dd>
+          <a href="https://api.arcade.academy/en/2.6.1/resources.html">2.6.1</a>
+        </dd>
+        
+        <dd>
+          <a href="https://api.arcade.academy/en/2.6.0/resources.html">2.6.0</a>
+        </dd>
+        
+        <dd>
+          <a href="https://api.arcade.academy/en/2.5.7/resources.html">2.5.7</a>
+        </dd>
+        
+        <dd>
+          <a href="https://api.arcade.academy/en/development/resources.html">development</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      
+      
+
+      
+      <dl>
+        
+        <!-- These are kept as relative links for internal installs that are http -->
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href="https://readthedocs.org/projects/arcade-library/">Project Home</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/arcade-library/builds/">Builds</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/arcade-library/downloads/">Downloads</a>
+        </dd>
+      </dl>
+      
+
+      
+
+      
+      <dl>
+        <dt>On GitHub</dt>
+        <dd>
+          <a href="https://github.com/pythonarcade/arcade/blob/maintenance/doc/resources.rst">View</a>
+        </dd>
+        
+        <dd>
+          <a href="https://github.com/pythonarcade/arcade/edit/maintenance/doc/resources.rst">Edit</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <dt>Search</dt>
+        <dd>
+          <div style="padding: 6px;">
+            
+            <form id="flyout-search-form" class="wy-form" target="_blank" action="https://readthedocs.org/projects/arcade-library/search/" method="get">
+              <input type="text" name="q" aria-label="Search docs" placeholder="Search docs">
+              </form>
+          </div>
+        </dd>
+      </dl>
+      
+
+      <hr>
+
+      
+        <small>
+          <span>Hosted by <a href="https://readthedocs.org/">Read the Docs</a></span>
+          <span> · </span>
+          <a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+        </small>
+      
+
+      
+
+</div>
+</div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./Resources — Python Arcade Library 2.6.5 documentation_files/js(3)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C7W6VSD1H5');
+</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./Resources — Python Arcade Library 2.6.5 documentation_files/js(4)">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-202281437-1');
+</script>
+
+
+
+</body></html>

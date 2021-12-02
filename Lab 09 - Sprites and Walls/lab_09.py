@@ -77,58 +77,58 @@ class MyGame(arcade.Window):
 
         # -- Set up several columns of wall
 
-        wall = arcade.Sprite("lava.png", SPRITE_SCALING)
+        wall = arcade.Sprite("../Lab 12 - Final Lab/lava.png", SPRITE_SCALING)
         wall.center_x = 64
         wall.center_y = 64
         self.wall_list.append(wall)
 
         # Roof
         for x in range(64, 1458, 64):
-            wall = arcade.Sprite("planetMid.png", SPRITE_SCALING)
+            wall = arcade.Sprite("../Lab 12 - Final Lab/planetMid.png", SPRITE_SCALING)
             wall.center_x = x
             wall.center_y = 960
             self.wall_list.append(wall)
 
         for x in range(320, 512, 64):
-            wall = arcade.Sprite("lava.png", SPRITE_SCALING)
+            wall = arcade.Sprite("../Lab 12 - Final Lab/lava.png", SPRITE_SCALING)
             wall.center_x = x
             wall.center_y = 64
             self.wall_list.append(wall)
 
         # --- Place boxes inside a loop
         for x in range(128, 320, 64):
-            wall = arcade.Sprite("grassMid.png", SPRITE_SCALING)
+            wall = arcade.Sprite("../Lab 12 - Final Lab/grassMid.png", SPRITE_SCALING)
             wall.center_x = x
             wall.center_y = 64
             self.wall_list.append(wall)
 
         for x in range(512, 832, 64):
-            wall = arcade.Sprite("grassMid.png", SPRITE_SCALING)
+            wall = arcade.Sprite("../Lab 12 - Final Lab/grassMid.png", SPRITE_SCALING)
             wall.center_x = x
             wall.center_y = 64
             self.wall_list.append(wall)
 
         for x in range(832, 1152, 64):
-            wall = arcade.Sprite("lava.png", SPRITE_SCALING)
+            wall = arcade.Sprite("../Lab 12 - Final Lab/lava.png", SPRITE_SCALING)
             wall.center_x = x
             wall.center_y = 64
             self.wall_list.append(wall)
 
         for x in range(1152, 1458, 64):
-            wall = arcade.Sprite("grassMid.png", SPRITE_SCALING)
+            wall = arcade.Sprite("../Lab 12 - Final Lab/grassMid.png", SPRITE_SCALING)
             wall.center_x = x
             wall.center_y = 64
             self.wall_list.append(wall)
 
         # Sides
         for y in range(64, 1010, 64):
-            wall = arcade.Sprite("stoneCenter.png", SPRITE_SCALING)
+            wall = arcade.Sprite("../Lab 12 - Final Lab/stoneCenter.png", SPRITE_SCALING)
             wall.center_x = 0
             wall.center_y = y
             self.wall_list.append(wall)
 
         for y in range(64, 1010, 64):
-            wall = arcade.Sprite("stoneCenter.png", SPRITE_SCALING)
+            wall = arcade.Sprite("../Lab 12 - Final Lab/stoneCenter.png", SPRITE_SCALING)
             wall.center_x = 1468
             wall.center_y = y
             self.wall_list.append(wall)
@@ -243,13 +243,13 @@ class MyGame(arcade.Window):
                            [1344, 832]]
 
         for coordinate in coordinate_list:
-            wall = arcade.Sprite("stoneCenter.png", SPRITE_SCALING)
+            wall = arcade.Sprite("../Lab 12 - Final Lab/stoneCenter.png", SPRITE_SCALING)
             wall.center_x = coordinate[0]
             wall.center_y = coordinate[1]
             self.wall_list.append(wall)
 
         for i in range(COIN_COUNT):
-            coin = arcade.Sprite("coinGold.png", SPRITE_SCALING_COIN)
+            coin = arcade.Sprite("../Lab 12 - Final Lab/coinGold.png", SPRITE_SCALING_COIN)
 
             coin_placed_successfully = False
 
