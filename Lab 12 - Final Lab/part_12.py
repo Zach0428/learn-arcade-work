@@ -35,7 +35,55 @@ METEOR = 14
 
 BULLET_SPEED = 3
 
+HEALTHBAR_WIDTH = 25
+HEALTHBAR_HEIGHT = 3
+HEALTHBAR_OFFSET_Y = -10
+
+HEALTH_NUMBER_OFFSET_X = -10
+HEALTH_NUMBER_OFFSET_Y = -25
+
+
 sound = arcade.load_sound(":resources:sounds/coin4.wav")
+
+class SpriteWithHealth(arcade.Sprite):
+    """ Sprite with hit points """
+
+    def __init__(self, image, scale, max_health):
+        super().__init__(image, scale)
+
+        # Add extra attributes for health
+        self.max_health = max_health
+        self.cur_health = max_health
+
+    def draw_health_number(self):
+        """ Draw how many hit points we have """
+
+        health_string = f"{self.cur_health}/{self.max_health}"
+        arcade.draw_text(health_string,
+                         start_x=self.center_x + HEALTH_NUMBER_OFFSET_X,
+                         start_y=self.center_y + HEALTH_NUMBER_OFFSET_Y,
+                         font_size=12,
+                         color=arcade.color.WHITE)
+
+    def draw_health_bar(self):
+        """ Draw the health bar """
+
+        # Draw the 'unhealthy' background
+        if self.cur_health < self.max_health:
+            arcade.draw_rectangle_filled(center_x=self.center_x,
+                                         center_y=self.center_y + HEALTHBAR_OFFSET_Y,
+                                         width=HEALTHBAR_WIDTH,
+                                         height=3,
+                                         color=arcade.color.RED)
+
+        # Calculate width based on health
+        health_width = HEALTHBAR_WIDTH * (self.cur_health / self.max_health)
+
+        arcade.draw_rectangle_filled(center_x=self.center_x - 0.5 * (HEALTHBAR_WIDTH - health_width),
+                                     center_y=self.center_y - 10,
+                                     width=health_width,
+                                     height=HEALTHBAR_HEIGHT,
+                                     color=arcade.color.GREEN)
 
 
 class MyGame(arcade.Window):
@@ -70,6 +118,10 @@ class MyGame(arcade.Window):
 
         self.score = 0
 
+        self.gun_sound = arcade.load_sound(":resources:sounds/hurt5.wav")
+        self.hit_sound = arcade.load_sound(":resources:sounds/hit4.wav")
+        self.death_sound = arcade.load_sound(":resources:sounds/hit5.wav")
+
     def setup(self):
         """ Set up the game and initialize the variables. """
 
@@ -81,8 +133,8 @@ class MyGame(arcade.Window):
         self.bullet_list = arcade.SpriteList()
 
         # Set up the player
-        self.player_sprite = arcade.Sprite(":resources:images/animated_characters/female_person/femalePerson_idle.png",
-                                           scale=0.4)
+        self.player_sprite = SpriteWithHealth(":resources:images/animated_characters/female_person/femalePerson_idle.png",
+                                           scale=0.4, max_health=5)
         self.player_sprite.center_x = 64
         self.player_sprite.center_y = 64
         self.player_list.append(self.player_sprite)
@@ -285,6 +337,16 @@ class MyGame(arcade.Window):
                 meteor.change_x = random.randrange(-4, 5)
                 meteor.change_y = random.randrange(-4, 5)
 
+            meteor_placed_successfully = False
+
+            while not meteor_placed_successfully:
+                meteor.center_x = random.randrange(64, 1458)
+                meteor.center_y = random.randrange(64, 960)
+                wall_hit_list = arcade.check_for_collision_with_list(meteor, self.wall_list)
+
+                if len(wall_hit_list) == 0:
+                    meteor_placed_successfully = True
+
             self.meteor_list.append(meteor)
 
         # Set the background color
@@ -308,6 +370,10 @@ class MyGame(arcade.Window):
         self.meteor_list.draw()
         self.bullet_list.draw()
 
+        for self.player_sprite in self.player_list:
+            self.player_sprite.draw_health_number()
+            self.player_sprite.draw_health_bar()
+
         # Select the (unscrolled) camera for our GUI
         self.camera_gui.use()
 
@@ -324,12 +390,18 @@ class MyGame(arcade.Window):
         output = "Score: " + str(self.score)
         arcade.draw_text(output, 5, 5, arcade.color.WHITE, 16)
 
+        if self.player_sprite.cur_health <= 0:
+            arcade.draw_text("Game Over", DEFAULT_SCREEN_WIDTH / 2, DEFAULT_SCREEN_HEIGHT / 2, arcade.color.GOLD,
+                             60, anchor_x="center")
+
         if len(self.coin_list) == 0:
-            arcade.draw_text("Game Over", DEFAULT_SCREEN_WIDTH / 2, DEFAULT_SCREEN_HEIGHT / 2, arcade.color.GOLD, 60,
+            arcade.draw_text("You Win!", DEFAULT_SCREEN_WIDTH / 2, DEFAULT_SCREEN_HEIGHT / 2, arcade.color.GOLD, 60,
                              anchor_x="center")
 
     def on_mouse_press(self, x, y, button, modifiers):
         """ Called whenever the mouse button is clicked. """
+
+        arcade.play_sound(self.gun_sound)
 
         bullet = arcade.Sprite(":resources:images/space_shooter/laserBlue01.png", 0.8)
 
@@ -374,60 +446,71 @@ class MyGame(arcade.Window):
             self.player_sprite.change_x = 0
 
     def on_update(self, delta_time):
-        """ Movement and game logic """
+        if self.player_sprite.cur_health > 0:
+            """ Movement and game logic """
 
-        hit_list = arcade.check_for_collision_with_list(self.player_sprite, self.coin_list)
+            hit_list = arcade.check_for_collision_with_list(self.player_sprite, self.coin_list)
 
-        for coin in hit_list:
-            self.score += 1
-            arcade.play_sound(sound)
-            coin.remove_from_sprite_lists()
+            for coin in hit_list:
+                self.score += 1
+                arcade.play_sound(sound)
+                coin.remove_from_sprite_lists()
 
-        if len(self.coin_list) > 0:
-            self.player_list.update()
-            self.physics_engine.update()
-            self.scroll_to_player()
+            if len(self.coin_list) > 0:
+                self.player_list.update()
+                self.physics_engine.update()
+                self.scroll_to_player()
 
-        for meteor in self.meteor_list:
+            for meteor in self.meteor_list:
+                meteor.center_x += meteor.change_x
+                walls_hit = arcade.check_for_collision_with_list(meteor, self.wall_list)
 
-            meteor.center_x += meteor.change_x
-            walls_hit = arcade.check_for_collision_with_list(meteor, self.wall_list)
-            for wall in walls_hit:
-                if meteor.change_x > 0:
-                    meteor.right = wall.left
-                elif meteor.change_x < 0:
-                    meteor.left = wall.right
-            if len(walls_hit) > 0:
-                meteor.change_x *= -1
+                for wall in walls_hit:
+                    if meteor.change_x > 0:
+                        meteor.right = wall.left
+                    elif meteor.change_x < 0:
+                        meteor.left = wall.right
+                if len(walls_hit) > 0:
+                    meteor.change_x *= -1
 
-            meteor.center_y += meteor.change_y
-            walls_hit = arcade.check_for_collision_with_list(meteor, self.wall_list)
-            for wall in walls_hit:
-                if meteor.change_y > 0:
-                    meteor.top = wall.bottom
-                elif meteor.change_y < 0:
-                    meteor.bottom = wall.top
-            if len(walls_hit) > 0:
-                meteor.change_y *= -1
+                meteor.center_y += meteor.change_y
+                walls_hit = arcade.check_for_collision_with_list(meteor, self.wall_list)
+                for wall in walls_hit:
+                    if meteor.change_y > 0:
+                        meteor.top = wall.bottom
+                    elif meteor.change_y < 0:
+                        meteor.bottom = wall.top
+                if len(walls_hit) > 0:
+                    meteor.change_y *= -1
 
-            self.bullet_list.update()
+                self.bullet_list.update()
 
-            for bullet in self.bullet_list:
+                for bullet in self.bullet_list:
 
-                # Check this bullet to see if it hit a coin
-                hit_list = arcade.check_for_collision_with_list(bullet, self.meteor_list)
+                    # Check this bullet to see if it hit a coin
+                    hit_list = arcade.check_for_collision_with_list(bullet, self.meteor_list)
 
-                # If it did, get rid of the bullet
-                if len(hit_list) > 0:
-                    bullet.remove_from_sprite_lists()
+                    # If it did, get rid of the bullet
+                    if len(hit_list) > 0:
+                        bullet.remove_from_sprite_lists()
 
-                # For every coin we hit, add to the score and remove the coin
-                for meteor in hit_list:
-                    meteor.remove_from_sprite_lists()
+                    # If the bullet flies off-screen, remove it.
+                    if bullet.bottom > self.width or bullet.top < 0 or bullet.right < 0 or bullet.left > self.width:
+                        bullet.remove_from_sprite_lists()
 
-                # If the bullet flies off-screen, remove it.
-                if bullet.bottom > self.width or bullet.top < 0 or bullet.right < 0 or bullet.left > self.width:
-                    bullet.remove_from_sprite_lists()
+            hit_list = arcade.check_for_collision_with_list(self.player_sprite, self.meteor_list)
+
+            for meteor in hit_list:
+                self.player_sprite.cur_health -= 1
+
+                meteor.remove_from_sprite_lists()
+
+                if self.player_sprite.cur_health <= 0:
+                    self.player_sprite.remove_from_sprite_lists()
+                    arcade.play_sound(self.death_sound)
+                else:
+                    # Not dead
+                    arcade.play_sound(self.hit_sound)
 
     def scroll_to_player(self):
         """
