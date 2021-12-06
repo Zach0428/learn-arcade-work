@@ -17,9 +17,6 @@ working on. A lot of times, I would actually write things on my phone in the not
 app to tell myself where I was at. That made it easier to pick right backup where
 I left off.
 
-Keeping track of changes,
-Documentation,
-
 Question 3
 Inspect the error,
 

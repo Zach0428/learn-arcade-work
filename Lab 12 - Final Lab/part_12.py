@@ -10,7 +10,6 @@ python -m arcade.examples.sprite_move_scrolling
 import random
 import arcade
 import math
-import os
 
 SPRITE_SCALING = 0.5
 
@@ -44,6 +43,7 @@ HEALTH_NUMBER_OFFSET_Y = -25
 
 
 sound = arcade.load_sound(":resources:sounds/coin4.wav")
+
 
 class SpriteWithHealth(arcade.Sprite):
     """ Sprite with hit points """
