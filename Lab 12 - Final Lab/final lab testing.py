@@ -43,6 +43,62 @@ HEALTH_NUMBER_OFFSET_Y = -25
 sound = arcade.load_sound(":resources:sounds/coin4.wav")
 
 
+class MenuView(arcade.View):
+    def on_show(self):
+        arcade.set_background_color(arcade.color.WHITE)
+
+    def on_draw(self):
+        arcade.start_render()
+        arcade.draw_text("Welcome my not so hard maze!", DEFAULT_SCREEN_WIDTH / 2, DEFAULT_SCREEN_HEIGHT / 2 + 150,
+                         arcade.color.BLACK, font_size=25, anchor_x="center")
+        arcade.draw_text("Do not get hit by the floating asteroids!", DEFAULT_SCREEN_WIDTH / 2, DEFAULT_SCREEN_HEIGHT
+                         / 2 + 75,
+                         arcade.color.BLACK, font_size=25, anchor_x="center")
+        arcade.draw_text("Try collecting all 20 coins without taking damage!", DEFAULT_SCREEN_WIDTH / 2,
+                         DEFAULT_SCREEN_HEIGHT / 2,
+                         arcade.color.BLACK, font_size=25, anchor_x="center")
+        arcade.draw_text("Click to advance", DEFAULT_SCREEN_WIDTH / 2, DEFAULT_SCREEN_HEIGHT / 2 - 75,
+                         arcade.color.GRAY, font_size=20, anchor_x="center")
+
+    def on_mouse_press(self, _x, _y, _button, _modifiers):
+        instructions_view = InstructionView()
+        self.window.show_view(instructions_view)
+
+
+class InstructionView(arcade.View):
+    """ View to show instructions """
+
+    def on_show(self):
+        """ This is run once when we switch to this view """
+        arcade.set_background_color(arcade.color.WHITE)
+        # Reset the viewport, necessary if we have a scrolling game and we need
+        # to reset the viewport back to the start so we can see what we draw.
+        arcade.set_viewport(0, self.window.width, 0, self.window.height)
+
+    def on_draw(self):
+        """ Draw this view """
+        arcade.start_render()
+        arcade.draw_text("Instructions Screen", self.window.width / 2, self.window.height / 2 + 225,
+                         arcade.color.BLACK, font_size=50, anchor_x="center")
+        arcade.draw_text("Use Up Arrow, Down Arrow, Left Arrow, and Right Arrow to move!", self.window.width / 2,
+                         self.window.height / 2 + 150,
+                         arcade.color.BLACK, font_size=20, anchor_x="center")
+        arcade.draw_text("Use the mouse to aim and click the mouse to shoot!", self.window.width / 2,
+                         self.window.height / 2 + 75,
+                         arcade.color.BLACK, font_size=20, anchor_x="center")
+        arcade.draw_text("Best of Luck to you!", self.window.width / 2,
+                         self.window.height / 2,
+                         arcade.color.BLACK, font_size=20, anchor_x="center")
+        arcade.draw_text("Click to advance", self.window.width / 2, self.window.height / 2-75,
+                         arcade.color.BLACK, font_size=20, anchor_x="center")
+
+    def on_mouse_press(self, _x, _y, _button, _modifiers):
+        """ If the user presses the mouse button, start the game. """
+        game_view = MyGame()
+        game_view.setup()
+        self.window.show_view(game_view)
+
+
 class SpriteWithHealth(arcade.Sprite):
     """ Sprite with hit points """
 
@@ -84,14 +140,14 @@ class SpriteWithHealth(arcade.Sprite):
                                      color=arcade.color.GREEN)
 
 
-class MyGame(arcade.Window):
+class MyGame(arcade.View):
     """ Main application class. """
 
-    def __init__(self, width, height, title):
+    def __init__(self):
         """
         Initializer
         """
-        super().__init__(width, height, title,)
+        super().__init__()
 
         # Sprite lists
         self.player_list = None
@@ -132,66 +188,67 @@ class MyGame(arcade.Window):
         self.bullet_list = arcade.SpriteList()
 
         # Set up the player
-        self.player_sprite = SpriteWithHealth(":resources:images/animated_characters/female_person/femalePerson_idle.png",
-                                           scale=0.4, max_health=5)
+        self.player_sprite = \
+            SpriteWithHealth(":resources:images/animated_characters/female_person/femalePerson_idle.png",
+                             scale=0.4, max_health=5)
         self.player_sprite.center_x = 64
         self.player_sprite.center_y = 64
         self.player_list.append(self.player_sprite)
 
         # -- Set up several columns of wall
 
-        wall = arcade.Sprite("../Lab 12 - Final Lab/lava.png", SPRITE_SCALING)
+        wall = arcade.Sprite("lava.png", SPRITE_SCALING)
         wall.center_x = 64
         wall.center_y = 64
         self.wall_list.append(wall)
 
         # Roof
         for x in range(64, 1458, 64):
-            wall = arcade.Sprite("../Lab 12 - Final Lab/planetMid.png", SPRITE_SCALING)
+            wall = arcade.Sprite("planetMid.png", SPRITE_SCALING)
             wall.center_x = x
             wall.center_y = 960
             self.wall_list.append(wall)
 
         for x in range(320, 512, 64):
-            wall = arcade.Sprite("../Lab 12 - Final Lab/lava.png", SPRITE_SCALING)
+            wall = arcade.Sprite("lava.png", SPRITE_SCALING)
             wall.center_x = x
             wall.center_y = 64
             self.wall_list.append(wall)
 
         # --- Place boxes inside a loop
         for x in range(128, 320, 64):
-            wall = arcade.Sprite("../Lab 12 - Final Lab/grassMid.png", SPRITE_SCALING)
+            wall = arcade.Sprite("grassMid.png", SPRITE_SCALING)
             wall.center_x = x
             wall.center_y = 64
             self.wall_list.append(wall)
 
         for x in range(512, 832, 64):
-            wall = arcade.Sprite("../Lab 12 - Final Lab/grassMid.png", SPRITE_SCALING)
+            wall = arcade.Sprite("grassMid.png", SPRITE_SCALING)
             wall.center_x = x
             wall.center_y = 64
             self.wall_list.append(wall)
 
         for x in range(832, 1152, 64):
-            wall = arcade.Sprite("../Lab 12 - Final Lab/lava.png", SPRITE_SCALING)
+            wall = arcade.Sprite("lava.png", SPRITE_SCALING)
             wall.center_x = x
             wall.center_y = 64
             self.wall_list.append(wall)
 
         for x in range(1152, 1458, 64):
-            wall = arcade.Sprite("../Lab 12 - Final Lab/grassMid.png", SPRITE_SCALING)
+            wall = arcade.Sprite("grassMid.png", SPRITE_SCALING)
             wall.center_x = x
             wall.center_y = 64
             self.wall_list.append(wall)
 
         # Sides
         for y in range(64, 1010, 64):
-            wall = arcade.Sprite("../Lab 12 - Final Lab/stoneCenter.png", SPRITE_SCALING)
+            wall = arcade.Sprite("stoneCenter.png", SPRITE_SCALING)
             wall.center_x = 0
             wall.center_y = y
             self.wall_list.append(wall)
 
         for y in range(64, 1010, 64):
-            wall = arcade.Sprite("../Lab 12 - Final Lab/stoneCenter.png", SPRITE_SCALING)
+            wall = arcade.Sprite("stoneCenter.png", SPRITE_SCALING)
             wall.center_x = 1468
             wall.center_y = y
             self.wall_list.append(wall)
@@ -306,13 +363,13 @@ class MyGame(arcade.Window):
                            [1344, 832]]
 
         for coordinate in coordinate_list:
-            wall = arcade.Sprite("../Lab 12 - Final Lab/stoneCenter.png", SPRITE_SCALING)
+            wall = arcade.Sprite("stoneCenter.png", SPRITE_SCALING)
             wall.center_x = coordinate[0]
             wall.center_y = coordinate[1]
             self.wall_list.append(wall)
 
         for i in range(COIN_COUNT):
-            coin = arcade.Sprite("../Lab 12 - Final Lab/coinGold.png", SPRITE_SCALING_COIN)
+            coin = arcade.Sprite("coinGold.png", SPRITE_SCALING_COIN)
 
             coin_placed_successfully = False
 
@@ -504,7 +561,8 @@ class MyGame(arcade.Window):
                     bullet.remove_from_sprite_lists()
 
                 # If the bullet flies off-screen, remove it.
-                if bullet.bottom > DEFAULT_SCREEN_WIDTH or bullet.top < 0 or bullet.right < 0 or bullet.left > DEFAULT_SCREEN_WIDTH:
+                if bullet.bottom > DEFAULT_SCREEN_WIDTH or bullet.top < 0 or bullet.right < 0 or bullet.left > \
+                        DEFAULT_SCREEN_WIDTH:
                     bullet.remove_from_sprite_lists()
 
             hit_list = arcade.check_for_collision_with_list(self.player_sprite, self.meteor_list)
@@ -529,15 +587,16 @@ class MyGame(arcade.Window):
         pan.
         """
 
-        position = self.player_sprite.center_x - self.width / 2, \
-            self.player_sprite.center_y - self.height / 2
+        position = self.player_sprite.center_x - self.window.width / 2, \
+            self.player_sprite.center_y - self.window.height / 2
         self.camera_sprites.move_to(position, CAMERA_SPEED)
 
 
 def main():
     """ Main function """
-    window = MyGame(DEFAULT_SCREEN_WIDTH, DEFAULT_SCREEN_HEIGHT, SCREEN_TITLE)
-    window.setup()
+    window = arcade.Window(DEFAULT_SCREEN_WIDTH, DEFAULT_SCREEN_HEIGHT, SCREEN_TITLE, resizable=True)
+    start_view = MenuView()
+    window.show_view(start_view)
     arcade.run()
 
 
