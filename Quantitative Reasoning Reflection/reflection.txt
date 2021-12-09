@@ -3,7 +3,15 @@ Zach Steenhoek
 Quantitative Reasoning Worksheet
 
 Question 1
-
+An if statement can be used when comparing code. You can use it when you want a
+certain code to run if something happens. Such as, if a number is less than 5,
+print ("the number is small.") When using classes, I used them as a way to quickly
+draw an object with complicated code. If I had an object with a lot of code that
+was going to be repeated, you wouldn't want to have to write the code over and over.
+That it why you put it in a class and call it a day. Functions are the things
+that we tell the computer to do. Some examples of some functions are, print,
+draw_line, etc. If I want the computer to do something, I have to give it a function
+so, it knows what to do.
 
 Question 2
 In order to communicate with other programmers, I typically use comments to show
@@ -18,7 +26,22 @@ app to tell myself where I was at. That made it easier to pick right backup wher
 I left off.
 
 Question 3
-Inspect the error,
+The first thing that I did was read the code and figure out what line I had the
+error on by looking at the stack tracing. I went to that line and made the changes.
+I measured how accurate my results were based on the information that was given
+to me. Sometimes I could do the math, but other times I just used common knowledge.
+I also asked my friend to compare answers with me. Also, the coding rooms
+evaluated my mistakes for me and, I just had to find the little mistake that was
+made.
 
 Question 4
-It is easy to mess up algorithms, No diversity, Based on statistics,
+We can't just use long algorithms because if you mess up one little thing, it will
+mess of the whole problem. Also, some algorithms you have to have the exact number.
+What I mean by that is there is no diversity within the answer. Some will give you
+just one specific answer when in reality, you are going to want more than just
+that simple answer. With that being said, a test score is basically an algorithm.
+I believe that a test score is just a number. I can show you what I know by doing,
+but if you test me on it, I might get nervous and not do as well. Sometimes students
+just don't listen in class. Why would we grade a teacher based on student scores
+if some students don't listen anyways?
+
